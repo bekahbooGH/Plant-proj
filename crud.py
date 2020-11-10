@@ -1,18 +1,23 @@
 # """CRUD operations."""
 
-# from model import db, User, Plant, Profile, Lighting, Location connect_to_db
+from model import db, User, Plant, Profile, Lighting, Location, connect_to_db
 
-# # Functions start here!!!!!
+# Functions start here!!!!!
 
-# def create_user(email, password):
-#     """Create and return a new user."""
+def create_user(fname, lname, user_email, zip_code, password):
+    """Create and return a new user."""
 
-#     user = User(email=email, password=password)
+    user = User(fname=fname, 
+                lname=lname, 
+                user_email=user_email, 
+                zip_code=zip_code, 
+                password=password)
 
-#     db.session.add(user)
-#     db.session.commit()
+    db.session.add(user)
+    db.session.commit()
 
-#     return user
+    return user
+
 
 
 # def get_users():
@@ -26,46 +31,54 @@
 #     return User.guery.get(user_id)
 
 
-# def create_movie(title, overview, release_date, poster_path):
-#     """Create and return a new movie."""
+def create_plant(plant_name, plant_description, light_id, location_id, picture_path):
+    """Create and return a new plant."""
 
-#     movie = Movie(title=title, 
-#                 overview=overview, 
-#                 release_date=release_date, 
-#                 poster_path=poster_path)
+    plant = Plant(plant_name=plant_name,
+                plant_description=plant_description,
+                light_id=light_id,
+                location_id=location_id,
+                picture_path-picture_path)
 
-#     db.session.add(movie)
-#     db.session.commit()
+    db.session.add(plant)
+    db.session.commit()
 
-#     return movie
+    return plant
 
+
+# def get_plants():
+#     """returns all plants"""
+
+#     return Plant.query.all()
+
+
+# def get_movie_by_name(plant_name):
+
+#     return Plant.query.get(plant_name)
+
+
+def create_lighting(plant_lighting):
+    """Create a lighting type for plants"""
+    
+    lighting = Lighting(plant_lighting=plant_lighting)
+
+    db.session.add(lighting)
+    db.session.commit()
+
+    return lighting
+
+def create_location(plant_location):
+    """Create a location type for plants"""
+    
+    location = Location(plant_location=plant_location)
+
+    db.session.add(location)
+    db.session.commit()
+
+    return location
     
 
-# def get_movies():
-#     """returns all movies"""
 
-#     return Movie.query.all()
-
-
-# def get_movie_by_id(movie_id):
-
-#     return Movie.guery.get(movie_id)
-
-
-# def create_rating(user, movie, score):
-#     """Create a rating for a movie from user"""
-    
-#     rating = Rating(user=user,
-#                     movie=movie,
-#                     score=score)
-
-#     db.session.add(rating)
-#     db.session.commit()
-
-#     return rating
-    
-
-
-# if __name__ == '__main__':
-#     from server import app
-#     connect_to_db(app)
+if __name__ == '__main__':
+    from server import app
+    connect_to_db(app)
