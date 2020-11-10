@@ -20,7 +20,7 @@ class User(db.Model):
 
     profile = db.relationship('Profile')
 
-    # users = a list of User objects
+    
 
     def __repr__(self):
         return f'<User user_id={self.user_id} email={self.user_email}>'
@@ -32,16 +32,15 @@ class Profile(db.Model):
 
     
     plant_profile_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey(users.user_id))
-    plant_id = db.Column(db.Integer, db.ForeignKey(plants.plant_id))
+    user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
+    plant_id = db.Column(db.Integer, db.ForeignKey('plants.plant_id'))
     
     user = db.relationship('User')
     plant = db.relationship('Plant')
 
-    # profiles = a list of user plant Profile objects
 
     def __repr__(self):
-        return f'<Profile plant_profile_id={self.plant_profile_id} user_id={self.user_id}>'
+        return f'<Profile plant_profile_id={self.plant_profile_id}>'
     
 
 
@@ -53,8 +52,8 @@ class Plant(db.Model):
     plant_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     plant_name = db.Column(db.String)
     plant_description = db.Column(db.Text)
-    light_id = db.Column(db.Integer, db.ForeignKey(lightings.light_id))
-    location_id = db.Column(db.Integer, db.ForeignKey(locations.location_id))
+    light_id = db.Column(db.Integer, db.ForeignKey('lightings.light_id'))
+    location_id = db.Column(db.Integer, db.ForeignKey('locations.location_id'))
     picture_path = db.Column(db.String)
 
 
@@ -63,7 +62,7 @@ class Plant(db.Model):
     profile = db.relationship('Profile')
 
 
-    # plants = a list of Plant objects
+
 
     def __repr__(self):
         return f'<Plant plant_id={self.plant_id} plant_name={self.plant_name}>'
@@ -80,7 +79,7 @@ class Lighting(db.Model):
 
     plant = db.relationship('Plant')
 
-    # lightings = a list of Lighting objects
+   
 
     def __repr__(self):
         return f'<Lighting light_id={self.light_id} lighting_type={self.plant_lighting}>'
@@ -98,13 +97,13 @@ class Location(db.Model):
     plant = db.relationship('Plant')
 
     
-    # locations = a list of Location objects
+  
 
     def __repr__(self):
         return f'<Location location_id={self.location_id} location_type={self.plant_location}>'
 
 
-def connect_to_db(flask_app, db_uri='postgresql:///ratings', echo=True):
+def connect_to_db(flask_app, db_uri='postgresql:///plants', echo=True):
     flask_app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
     flask_app.config['SQLALCHEMY_ECHO'] = echo
     flask_app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
