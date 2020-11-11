@@ -2,7 +2,7 @@
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
+# from datetime import datetime
 
 db = SQLAlchemy()
 
@@ -19,11 +19,11 @@ class User(db.Model):
     password = db.Column(db.String)
 
     profile = db.relationship('Profile')
-
     
 
     def __repr__(self):
         return f'<User user_id={self.user_id} email={self.user_email}>'
+
 
 class Profile(db.Model):
     """A user's plant profile"""
@@ -62,10 +62,9 @@ class Plant(db.Model):
     profile = db.relationship('Profile')
 
 
-
-
     def __repr__(self):
         return f'<Plant plant_id={self.plant_id} plant_name={self.plant_name}>'
+
 
 
 class Lighting(db.Model):
@@ -79,7 +78,6 @@ class Lighting(db.Model):
 
     plant = db.relationship('Plant')
 
-   
 
     def __repr__(self):
         return f'<Lighting light_id={self.light_id} lighting_type={self.plant_lighting}>'
@@ -95,12 +93,11 @@ class Location(db.Model):
     plant_location = db.Column(db.String)
 
     plant = db.relationship('Plant')
-
     
-  
 
     def __repr__(self):
         return f'<Location location_id={self.location_id} location_type={self.plant_location}>'
+
 
 
 def connect_to_db(flask_app, db_uri='postgresql:///plants', echo=True):

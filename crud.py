@@ -28,7 +28,7 @@ def create_user(fname, lname, user_email, zip_code, password):
 
 # def get_user_by_id(user_id):
 
-#     return User.guery.get(user_id)
+#     return User.query.get(user_id)
 
 
 def create_plant(plant_name, plant_description, light_id, location_id, picture_path):
@@ -38,7 +38,7 @@ def create_plant(plant_name, plant_description, light_id, location_id, picture_p
                 plant_description=plant_description,
                 light_id=light_id,
                 location_id=location_id,
-                picture_path-picture_path)
+                picture_path=picture_path)
 
     db.session.add(plant)
     db.session.commit()
@@ -46,15 +46,15 @@ def create_plant(plant_name, plant_description, light_id, location_id, picture_p
     return plant
 
 
-# def get_plants():
-#     """returns all plants"""
+def get_plants():
+    """returns all plants"""
 
-#     return Plant.query.all()
+    return Plant.query.all()
 
 
-# def get_movie_by_name(plant_name):
+def get_plant_by_id(plant_id):
 
-#     return Plant.query.get(plant_name)
+    return Plant.query.get(plant_id)
 
 
 def create_lighting(plant_lighting):

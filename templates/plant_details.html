@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ plant.plant_name }} - Details{% endblock %}
+
+{% block body %}
+<h1>{{ plant.plant_name }}</h1>
+
+<p>
+  {{ plant.plant_description }}
+</p>
+<p>
+    {{ plant.plant_lighting }}
+</p>
+<p>
+    {{ plant.plant_lighting }}
+</p>
+<img src="{{ plant.picture_path }}">
+{% endblock %}

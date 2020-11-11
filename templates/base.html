@@ -1,13 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>{% block title %}TITLE GOES HERE{% endblock %}</title>
-  <link rel="stylesheet" href="/static/css/styles.css">
-  <script src="http://code.jquery.com/jquery.js"></script>
-</head>
-<body>
-  <h1>Ubermelon</h1>
-  {% block content %}BODY CONTENT GOES HERE{% endblock %}
-  <footer>Ubermelon Delivering Deliciousness Since 2012</footer>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>
+      {% block title %}{% endblock %}
+    </title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+
+    {% block after_body %}{% endblock %}
+  </body>
 </html>
