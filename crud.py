@@ -2,7 +2,6 @@
 
 from model import db, User, Plant, Profile, Lighting, Location, connect_to_db
 
-# Functions start here!!!!!
 
 def create_user(fname, lname, user_email, zip_code, password):
     """Create and return a new user."""
@@ -20,42 +19,20 @@ def create_user(fname, lname, user_email, zip_code, password):
 
 
 
-# def get_users():
-#     """returns all users"""
+def get_users():
+    """returns all users"""
 
-#     return User.query.all()
+    return User.query.all()
 
 
 # def get_user_by_id(user_id):
 
 #     return User.query.get(user_id)
 
-
-def create_plant(plant_name, plant_description, light_id, location_id, picture_path):
-    """Create and return a new plant."""
-
-    plant = Plant(plant_name=plant_name,
-                plant_description=plant_description,
-                light_id=light_id,
-                location_id=location_id,
-                picture_path=picture_path)
-
-    db.session.add(plant)
-    db.session.commit()
-
-    return plant
-
-
-def get_plants():
-    """returns all plants"""
-
-    return Plant.query.all()
-
-
-def get_plant_by_id(plant_id):
-
-    return Plant.query.get(plant_id)
-
+#TODO:     lighting_file = open(lighting_conversion.txt)
+# for line in file :
+#     line = line.rstrip()
+#     words = line.split('|')
 
 def create_lighting(plant_lighting):
     """Create a lighting type for plants"""
@@ -76,6 +53,108 @@ def create_location(plant_location):
     db.session.commit()
 
     return location
+
+def lighting_conversion(plant_lighting):
+    """Take in lighting name and return light_id."""
+    if plant_lighting == "Low Light":
+        light_id = 1
+    elif plant_lighting == "Medium Light":
+        light_id = 2
+    elif plant_lighting == "Bright Light":
+        light_id = 3
+
+    return light_id
+
+
+def location_conversion(plant_location):
+    """Take in location name and return location_id."""
+    if plant_location == "North Facing":
+        location_id = 1
+    elif plant_location == "East Facing":
+        location_id = 2
+    elif plant_location == "South Facing":
+        location_id = 3
+    elif plant_location == "West Facing":
+        location_id = 4 
+
+    return location_id
+
+
+def create_plant(plant_name, plant_description, light_id, location_id, picture_path):
+    """Create and return a new plant."""
+
+    plant = Plant(plant_name=plant_name,
+                plant_description=plant_description,
+                light_id=light_id,
+                location_id=location_id,
+                picture_path=picture_path)
+
+    db.session.add(plant)
+    db.session.commit()
+
+    return plant
+
+
+def get_plants():
+    """returns all plants to page"""
+
+    all_plants = Plant.query.all()
+    # for plant in all_plants:
+
+    #     if light_id == 1:
+    #         plant_lighting = "Low Light"
+    #     if light_id == 2:
+    #         plant_lighting = "Medium Light"
+    #     if light_id == 3:
+    #         plant_lighting = "Bright Light"
+
+    #     if location_id == 1:
+    #         plant_location = "North Facing"
+    #     if location_id == 2:
+    #         plant_location = "East Facing"
+    #     if location_id == 3:
+    #         plant_location = "South Facing"
+    #     if location_id == 4:
+    #         plant_location = "West Facing"
+
+
+    #     return plant
+    return all_plants
+
+
+def get_plant_by_id(plant_id):
+
+    this_plant =  Plant.query.get(plant_id)
+
+    if this_plant.light_id == 1:
+        plant_lighting = "Low Light"
+    if this_plant.light_id == 2:
+        plant_lighting = "Medium Light"
+    if this_plant.light_id == 3:
+        plant_lighting = "Bright Light"
+
+    if this_plant.location_id == 1:
+        plant_location = "North Facing"
+    if this_plant.location_id == 2:
+        plant_location = "East Facing"
+    if this_plant.location_id == 3:
+        plant_location = "South Facing"
+    if this_plant.location_id == 4:
+        plant_location = "West Facing"
+
+
+    return this_plant
+
+
+def create_plant_profile(plant_profile_id, user_id, plant_id):
+    """Create and return a new plant profile for user."""
+
+    plant_profile = Profile(user_id=user_id, plant_id=plant_id)
+
+    db.session.add(plant_profile)
+    db.session.commit()
+
+    return plant_profile
     
 
 

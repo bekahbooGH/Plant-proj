@@ -24,49 +24,6 @@ class User(db.Model):
     def __repr__(self):
         return f'<User user_id={self.user_id} email={self.user_email}>'
 
-
-class Profile(db.Model):
-    """A user's plant profile"""
-
-    __tablename__ = 'profiles'
-
-    
-    plant_profile_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
-    plant_id = db.Column(db.Integer, db.ForeignKey('plants.plant_id'))
-    
-    user = db.relationship('User')
-    plant = db.relationship('Plant')
-
-
-    def __repr__(self):
-        return f'<Profile plant_profile_id={self.plant_profile_id}>'
-    
-
-
-class Plant(db.Model):
-    """A plant"""
-
-    __tablename__ = 'plants'
-
-    plant_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    plant_name = db.Column(db.String)
-    plant_description = db.Column(db.Text)
-    light_id = db.Column(db.Integer, db.ForeignKey('lightings.light_id'))
-    location_id = db.Column(db.Integer, db.ForeignKey('locations.location_id'))
-    picture_path = db.Column(db.String)
-
-
-    lighting = db.relationship('Lighting')
-    location = db.relationship('Location')
-    profile = db.relationship('Profile')
-
-
-    def __repr__(self):
-        return f'<Plant plant_id={self.plant_id} plant_name={self.plant_name}>'
-
-
-
 class Lighting(db.Model):
     """A plant light condition"""
 
@@ -97,6 +54,47 @@ class Location(db.Model):
 
     def __repr__(self):
         return f'<Location location_id={self.location_id} location_type={self.plant_location}>'
+    
+
+
+class Plant(db.Model):
+    """A plant"""
+
+    __tablename__ = 'plants'
+
+    plant_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    plant_name = db.Column(db.String)
+    plant_description = db.Column(db.Text)
+    light_id = db.Column(db.Integer, db.ForeignKey('lightings.light_id'))
+    location_id = db.Column(db.Integer, db.ForeignKey('locations.location_id'))
+    picture_path = db.Column(db.String)
+
+
+    lighting = db.relationship('Lighting')
+    location = db.relationship('Location')
+    profile = db.relationship('Profile')
+
+
+    def __repr__(self):
+        return f'<Plant plant_id={self.plant_id} plant_name={self.plant_name} light_id={self.light_id}>'
+
+class Profile(db.Model):
+    """A user's plant profile"""
+
+    __tablename__ = 'profiles'
+
+    
+    plant_profile_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
+    plant_id = db.Column(db.Integer, db.ForeignKey('plants.plant_id'))
+    
+    user = db.relationship('User')
+    plant = db.relationship('Plant')
+
+
+    def __repr__(self):
+        return f'<Profile plant_profile_id={self.plant_profile_id}>'
+
 
 
 
