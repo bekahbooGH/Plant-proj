@@ -29,6 +29,11 @@ def get_users():
 
 #     return User.query.get(user_id)
 
+def get_user_by_email(email):
+    """Return a user by email."""
+
+    return User.query.filter(User.email == email).first()
+
 #TODO:     lighting_file = open(lighting_conversion.txt)
 # for line in file :
 #     line = line.rstrip()
@@ -126,27 +131,27 @@ def get_plant_by_id(plant_id):
 
     this_plant =  Plant.query.get(plant_id)
 
-    if this_plant.light_id == 1:
-        plant_lighting = "Low Light"
-    if this_plant.light_id == 2:
-        plant_lighting = "Medium Light"
-    if this_plant.light_id == 3:
-        plant_lighting = "Bright Light"
+    # if this_plant.light_id == 1:
+    #     plant_lighting = "Low Light"
+    # if this_plant.light_id == 2:
+    #     plant_lighting = "Medium Light"
+    # if this_plant.light_id == 3:
+    #     plant_lighting = "Bright Light"
 
-    if this_plant.location_id == 1:
-        plant_location = "North Facing"
-    if this_plant.location_id == 2:
-        plant_location = "East Facing"
-    if this_plant.location_id == 3:
-        plant_location = "South Facing"
-    if this_plant.location_id == 4:
-        plant_location = "West Facing"
+    # if this_plant.location_id == 1:
+    #     plant_location = "North Facing"
+    # if this_plant.location_id == 2:
+    #     plant_location = "East Facing"
+    # if this_plant.location_id == 3:
+    #     plant_location = "South Facing"
+    # if this_plant.location_id == 4:
+    #     plant_location = "West Facing"
 
 
     return this_plant
 
 
-def create_plant_profile(plant_profile_id, user_id, plant_id):
+def create_plant_profile(user_id, plant_id):
     """Create and return a new plant profile for user."""
 
     plant_profile = Profile(user_id=user_id, plant_id=plant_id)
@@ -155,6 +160,12 @@ def create_plant_profile(plant_profile_id, user_id, plant_id):
     db.session.commit()
 
     return plant_profile
+
+
+def get_profile_by_id(plant_profile_id):
+
+    profile =  Profile.query.get(plant_profile_id)
+    return profile
     
 
 

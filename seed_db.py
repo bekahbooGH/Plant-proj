@@ -60,17 +60,27 @@ for plant in plant_data:
 
 
 #Create 5 users
+users_in_db = []
 for n in range(5):
     email = f'user{n}@test.com'
     password = 'test'
 
     user = crud.create_user(fname, lname, user_email, zip_code, password)
+    users_in_db.append(user)
+
+
+#     for n in range(5):
+#         random_plant = choice(plants_in_db)
+#         score = randint(1, 5)
+
+#         crud.create_plant(user, random_plant)
+
+# will make 2 plant requests
+
 
 #  Create profiles for each user
-    for n in range(5):
-        random_plant = choice(plants_in_db)
-        score = randint(1, 5)
+profiles_in_db = []
+for user in users_in_db:
+    profile = crud.create_plant_profile(user_id, plant_id)
 
-        crud.create_plant(user, random_plant)
-
-will make 2 plant requests
+    profiles_in_db.append(plant_profile)
