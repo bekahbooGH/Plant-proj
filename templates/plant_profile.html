@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Plant Recommendations Home{% endblock %}
+
+{% block body %}
+  <h1>Welcome!</h1>
+
+  <h2>Navigation</h2>
+  <h1>{{ plant.plant_name }}</h1>
+
+  <p>
+    {{ plant.plant_description }}
+  </p>
+  <p>
+      {{ plant.lighting.plant_lighting }}
+  </p>
+  <p>
+      {{ plant.location.plant_location }}
+  </p>
+  <img src="{{ plant.picture_path }}">
+{% endblock %}

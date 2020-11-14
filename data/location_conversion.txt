@@ -1,0 +1,4 @@
+1|North Facing
+2|East Facing
+3|South Facing
+4|West Facing

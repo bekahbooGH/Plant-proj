@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Plant Questionnaire Home{% endblock %}
+
+{% block body %}
+<form>
+    Choose a lighting condition:
+    <input type="radio" name="lighting" value="Low">
+    <label>Low Light</label>
+    <input type="radio" name="lighting" value="Medium">
+    <label>Medium Light</label>
+    <input type="radio" name="lighting" value="Bright">
+    <label>Bright Light</label>
+</form>>
+<form>
+    Choose a window direction:
+    <select name="location">
+        <option value="North">North Facing</option>
+        <option value="East">East Facing</option>
+        <option value="South">South Facing</option>
+        <option value="West">West Facing</option>
+    </select>>
+</form>
+<form>
+    <input type="submit">
+</form>
+{% endblock %}
