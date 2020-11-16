@@ -2,7 +2,7 @@
 {% block title %}Plant Questionnaire Home{% endblock %}
 
 {% block body %}
-<form>
+<form action="/plant-recommends">
     Choose a lighting condition:
     <input type="radio" name="lighting" value="Low">
     <label>Low Light</label>
@@ -10,8 +10,7 @@
     <label>Medium Light</label>
     <input type="radio" name="lighting" value="Bright">
     <label>Bright Light</label>
-</form>>
-<form>
+
     Choose a window direction:
     <select name="location">
         <option value="North">North Facing</option>

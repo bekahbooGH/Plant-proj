@@ -61,9 +61,9 @@ for plant in plant_data:
 
 #Create 5 users
 users_in_db = []
-for n in range(5):
-    email = f'user{n}@test.com'
-    password = 'test'
+# for n in range(5):
+#     email = f'user{n}@test.com'
+#     password = 'test'
 
     user = crud.create_user(fname, lname, user_email, zip_code, password)
     users_in_db.append(user)

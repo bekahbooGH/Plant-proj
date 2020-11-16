@@ -29,10 +29,10 @@ def get_users():
 
 #     return User.query.get(user_id)
 
-def get_user_by_email(email):
+def get_user_by_email(user_email):
     """Return a user by email."""
 
-    return User.query.filter(User.email == email).first()
+    return User.query.filter(User.user_email == user_email).first()
 
 #TODO:     lighting_file = open(lighting_conversion.txt)
 # for line in file :
@@ -106,49 +106,52 @@ def get_plants():
     all_plants = Plant.query.all()
     # for plant in all_plants:
 
-    #     if light_id == 1:
-    #         plant_lighting = "Low Light"
-    #     if light_id == 2:
-    #         plant_lighting = "Medium Light"
-    #     if light_id == 3:
-    #         plant_lighting = "Bright Light"
-
-    #     if location_id == 1:
-    #         plant_location = "North Facing"
-    #     if location_id == 2:
-    #         plant_location = "East Facing"
-    #     if location_id == 3:
-    #         plant_location = "South Facing"
-    #     if location_id == 4:
-    #         plant_location = "West Facing"
-
 
     #     return plant
     return all_plants
+ 
 
 
 def get_plant_by_id(plant_id):
 
     this_plant =  Plant.query.get(plant_id)
 
-    # if this_plant.light_id == 1:
-    #     plant_lighting = "Low Light"
-    # if this_plant.light_id == 2:
-    #     plant_lighting = "Medium Light"
-    # if this_plant.light_id == 3:
-    #     plant_lighting = "Bright Light"
-
-    # if this_plant.location_id == 1:
-    #     plant_location = "North Facing"
-    # if this_plant.location_id == 2:
-    #     plant_location = "East Facing"
-    # if this_plant.location_id == 3:
-    #     plant_location = "South Facing"
-    # if this_plant.location_id == 4:
-    #     plant_location = "West Facing"
-
-
     return this_plant
+
+# def get_plant_by_lighting(light_id):
+#     """Return a user by email."""
+
+#     return Plant.query.filter(Plant.light_id == light_id).first()
+
+
+# plants_lighting = Plant.query.filter_by(plant.lighting.lighting_id)
+# plants_location = Plant.query.filter_by(plant.location.location_id)
+
+# def get_plant_by_lighting(light_id):
+
+#     this_plant =  Plant.query.get(light_id)
+#     if this_plant.light_id == 1:
+#         Lighting.plant_lighting = "Low Light"
+#     elif this_plant.light_id == 2:
+#         Lighting.plant_lighting = "Medium Light"
+#     elif this_plant.light_id == 3:
+#         Lighting.plant_lighting = "Bright Light"
+#     return this_plant
+    
+# def get_plant_by_location(location_id):
+
+#     this_plant =  Plant.query.get(location_id)
+    # if this_plant.location_id == 1:
+    #     Location.plant_location = "North Facing"
+    # elif this_plant.location_id == 2:
+    #     Location.plant_location = "East Facing"
+    # elif this_plant.location_id == 3:
+    #     Location.plant_location = "South Facing"
+    # elif this_plant.location_id == 4:
+    #     Location.plant_location = "West Facing"
+    return this_plant  
+
+
 
 
 def create_plant_profile(user_id, plant_id):
