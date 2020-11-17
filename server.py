@@ -69,7 +69,7 @@ def process_login():
     if user:
         if password == user.password:
             flash('Success! Happy plantin!')
-            return render_template('plant_form.html')
+            return redirect('/plant-form')
         elif password != user.password:
             flash('Incorrect password. Try again.')
             return redirect('/login')
@@ -121,19 +121,30 @@ def show_plant_form():
 
     return render_template('plant_form.html')
 
-@app.route('/plant-recommends')
+@app.route('/plant-recommends') 
 def show_plant_recommends():
     """Show plant recommendations."""
     lighting = request.args.get("lighting")
     location = request.args.get("location")
+    print(location)
+    print(lighting)
     # show_plant(plant_id)
-    plants_lighting = Plant.query.filter_by(plant.lighting.lighting_id)
-    plants_location = Plant.query.filter_by(plant.location.location_id)
     plant_recommends = []
-    for plant in plants_lighting:
-        if plant in plants_location:
+    light_recommends = crud.get_plant_by_lighting(lighting)
+    location_recommends = crud.get_plant_by_location(location)
+    for plant in light_recommends:
+        if plant in location_recommends:
             plant_recommends.append(plant)
-            print(plants)
+
+    # plants_lighting = Plant.query.filter_by(lighting.lighting_id)
+    # plants_location = Plant.query.filter_by(location.location_id)
+    # plant_recommends = []
+    # plant_recommends.append(plants_lighting)
+    print(plant_recommends)
+    # for plant in plants_lighting:
+    #     if plant in plants_location:
+    #         plant_recommends.append(plant)
+    #         print(plants)
     # if lighting = "Low" and location == "North":
     #     plants = Plant.query.filter_by(light_id="1")
     # elif lighting == "Medium":
@@ -149,7 +160,7 @@ def show_plant_recommends():
     # elif location == "West":
     #     plants = Plant.query.filter_by(location_id="4")
 
-    return render_template('plant_recommends.html')
+    return render_template('plant_recommends.html', plant_recommends=plant_recommends) #KEEP AN EYE ON THIS AND ASK FOR LUCIA IF YOU GET A PROBLEM
 
 @app.route('/profiles/<plant_profile_id>')
 def show_plant_profile(plant_profile_id):

@@ -4,11 +4,12 @@
 {% block body %}
     <h1>Recommended Plants</h1>
         {% for plant in plant_recommends %}
-            <li>
-                <a href="/plants/{{ plant.plant_id }}">
-                {{ plant.plant_name }}
-                </a>
-            </li>
-            {% endfor %}
-            </ul>
-            {% endblock %}
+        <li>
+            <a href="/plants/{{ plant.plant_id }}">
+            {{ plant.plant_name }}
+           <img src = "{{ plant.picture_path }}" >
+            </a>
+        </li>
+        {% endfor %}
+        </ul>
+        {% endblock %}

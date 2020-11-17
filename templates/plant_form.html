@@ -4,22 +4,22 @@
 {% block body %}
 <form action="/plant-recommends">
     Choose a lighting condition:
-    <input type="radio" name="lighting" value="Low">
+    <input type="radio" name="lighting" value="1">
     <label>Low Light</label>
-    <input type="radio" name="lighting" value="Medium">
+    <input type="radio" name="lighting" value="2">
     <label>Medium Light</label>
-    <input type="radio" name="lighting" value="Bright">
+    <input type="radio" name="lighting" value="3">
     <label>Bright Light</label>
 
     Choose a window direction:
     <select name="location">
-        <option value="North">North Facing</option>
-        <option value="East">East Facing</option>
-        <option value="South">South Facing</option>
-        <option value="West">West Facing</option>
+        <option value="1">North Facing</option>
+        <option value="2">East Facing</option>
+        <option value="3">South Facing</option>
+        <option value="4">West Facing</option>
     </select>>
-</form>
-<form>
+
+
     <input type="submit">
 </form>
 {% endblock %}

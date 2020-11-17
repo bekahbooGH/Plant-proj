@@ -118,14 +118,19 @@ def get_plant_by_id(plant_id):
 
     return this_plant
 
-# def get_plant_by_lighting(light_id):
-#     """Return a user by email."""
+def get_plant_by_lighting(light_id):
+    """Return a plant by lighting id."""
 
-#     return Plant.query.filter(Plant.light_id == light_id).first()
+    return Plant.query.filter(Plant.light_id == light_id).all()
+
+def get_plant_by_location(location_id):
+    """Return a plant by location id."""
+
+    return Plant.query.filter(Plant.location_id == location_id).all()
 
 
-# plants_lighting = Plant.query.filter_by(plant.lighting.lighting_id)
-# plants_location = Plant.query.filter_by(plant.location.location_id)
+# plants_lighting = Plant.query.filter_by(plant.lighting_id)
+# plants_location = Plant.query.filter_by(plant.location_id)
 
 # def get_plant_by_lighting(light_id):
 
