@@ -8,11 +8,11 @@ import crud
 import model
 import server
 
-# os.system('dropdb ratings')
+# os.system('dropdb plants')
 # More code will go here
 
-os.system('dropdb ratings')
-os.system('createdb ratings')
+os.system('dropdb plants')
+os.system('createdb plants')
 
 model.connect_to_db(server.app)
 model.db.create_all()
@@ -60,13 +60,13 @@ for plant in plant_data:
 
 
 #Create 5 users
-users_in_db = []
-# for n in range(5):
-#     email = f'user{n}@test.com'
-#     password = 'test'
+# users_in_db = []
+# # for n in range(5):
+# #     email = f'user{n}@test.com'
+# #     password = 'test'
 
-    user = crud.create_user(fname, lname, user_email, zip_code, password)
-    users_in_db.append(user)
+#     user = crud.create_user(fname, lname, user_email, zip_code, password)
+#     users_in_db.append(user)
 
 
 #     for n in range(5):
@@ -79,8 +79,8 @@ users_in_db = []
 
 
 #  Create profiles for each user
-profiles_in_db = []
-for user in users_in_db:
-    profile = crud.create_plant_profile(user_id, plant_id)
+# profiles_in_db = []
+# for user in users_in_db:
+#     profile = crud.create_plant_profile(user_id, plant_id)
 
-    profiles_in_db.append(plant_profile)
+#     profiles_in_db.append(plant_profile)
