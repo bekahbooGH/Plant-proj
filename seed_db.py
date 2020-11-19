@@ -60,14 +60,18 @@ for plant in plant_data:
 
 
 #Create 5 users
-# users_in_db = []
+users_in_db = crud.User.query.all()
 # # for n in range(5):
 # #     email = f'user{n}@test.com'
 # #     password = 'test'
-
-#     user = crud.create_user(fname, lname, user_email, zip_code, password)
-#     users_in_db.append(user)
-
+# fname = request.form.get('fname')
+#     lname = request.form.get('lname')
+#     email = request.form.get('user_email')
+#     zip_code = request.form.get('zip_code')
+#     password = request.form.get('password')
+# user = crud.create_user(fname='fname', lname='lname', user_email='user_email', zip_code=zip_code, password='password')
+# users_in_db.append(user)
+print(users_in_db)
 
 #     for n in range(5):
 #         random_plant = choice(plants_in_db)
@@ -78,9 +82,9 @@ for plant in plant_data:
 # will make 2 plant requests
 
 
-#  Create profiles for each user
-# profiles_in_db = []
-# for user in users_in_db:
-#     profile = crud.create_plant_profile(user_id, plant_id)
+# Create profiles for each user
+profiles_in_db = []
+for user in users_in_db:
+    profile = crud.create_plant_profile(user_id, plant_id)
 
-#     profiles_in_db.append(plant_profile)
+    profiles_in_db.append(plant_profile)

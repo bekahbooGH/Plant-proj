@@ -87,6 +87,7 @@ class Profile(db.Model):
     plant_profile_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
     plant_id = db.Column(db.Integer, db.ForeignKey('plants.plant_id'))
+    # plant_quantity = db.Column(db.Integer)
     
     user = db.relationship('User')
     plant = db.relationship('Plant')

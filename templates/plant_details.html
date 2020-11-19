@@ -9,10 +9,23 @@
   {{ plant.plant_description }}
 </p>
 <p>
-    {{ plant.lighting }}
+    {{ plant.lighting.plant_lighting }}
 </p>
 <p>
-    {{ plant.location }}
+    {{ plant.location.plant_location }}
 </p>
 <img src="{{ plant.picture_path }}">
+
+<form action="/profile" method="POST">
+
+       {# TODO #}
+
+  <input id="plant-id" name="plant-id" type="hidden" value="{{ plant.plant_id }}" >     {# make sure this is actually how hidden imputs are formatted #}
+
+  <button type="submit">Add to profile</button>
+</form>
 {% endblock %}
+
+
+
+

@@ -59,6 +59,7 @@ def show_login():
     return render_template("login.html")
 
 
+
 @app.route("/login", methods=["POST"])
 def process_login():
     """Log user into site."""
@@ -68,6 +69,8 @@ def process_login():
     user = crud.get_user_by_email(email)
     if user:
         if password == user.password:
+            session['current_user'] = user.fname
+            session['user_id'] = user.user_id
             flash('Success! Happy plantin!')
             return redirect('/plant-form')
         elif password != user.password:
@@ -100,7 +103,7 @@ def register_user():
         flash('That email already exists. Try again.')
         return redirect('/register-user')
     else:
-        crud.create_user(fname, lname, email, zip_code, password)
+        user = crud.create_user(fname, lname, email, zip_code, password)
         flash('Account created! Please log in.')
 
     return render_template('login.html', user=user)
@@ -136,45 +139,45 @@ def show_plant_recommends():
         if plant in location_recommends:
             plant_recommends.append(plant)
 
-    # plants_lighting = Plant.query.filter_by(lighting.lighting_id)
-    # plants_location = Plant.query.filter_by(location.location_id)
-    # plant_recommends = []
-    # plant_recommends.append(plants_lighting)
     print(plant_recommends)
-    # for plant in plants_lighting:
-    #     if plant in plants_location:
-    #         plant_recommends.append(plant)
-    #         print(plants)
-    # if lighting = "Low" and location == "North":
-    #     plants = Plant.query.filter_by(light_id="1")
-    # elif lighting == "Medium":
-    #     plants = Plant.query.filter_by(light_id="2")
-    # elif lighting == "Bright":
-    #     plants = Plant.query.filter_by(light_id="3")
-    # if location == "North":
-    #     plants = Plant.query.filter_by(location_id="1")
-    # elif location == "East":
-    #     plants = Plant.query.filter_by(location_id="2")
-    # elif location == "South":
-    #     plants = Plant.query.filter_by(location_id="3")
-    # elif location == "West":
-    #     plants = Plant.query.filter_by(location_id="4")
+    
 
     return render_template('plant_recommends.html', plant_recommends=plant_recommends) #KEEP AN EYE ON THIS AND ASK FOR LUCIA IF YOU GET A PROBLEM
 
-@app.route('/profiles/<plant_profile_id>')
-def show_plant_profile(plant_profile_id):
-    """Show profile for a specific user."""
+@app.route('/profile', methods=['POST'])
+def show_plant_profile():
+    """Create profile for a specific user and add plant."""
+    # user_id = request.form['user-id']
+    # print(f"***************{user_id}********")
+    # user = crud.get_user_by_id(1)
+    user_id = session['user_id']
 
-    profile = crud.get_profile_by_id(plant_profile_id)
+    plant_id= request.form['plant-id']
+    # print(f"*******{plant_id}*************")
+    # plant = crud.get_plant_by_id(plant_id)
+    # print(f'********{plant}********')
+    plant_profile = crud.create_plant_profile(user_id, plant_id)
+    
+
+    return render_template('plant_profile.html', plant_profile=plant_profile)
+
+# @app.route('/profiles/<plant_profile_id>')
+# def plant_profile():
+#     """Show profile for a specific user."""
+
+#     profile = crud.get_profile_by_id(plant_profile_id)
+#     print(profile)
 
     return render_template('plant_profile.html', profile=profile)
-
-
+# "/add-to-profile" method="POST">
+#   <p>Add to profile?</p>
+#   <input type="submit">
 
 if __name__ == '__main__':
     connect_to_db(app)
     app.run(host='0.0.0.0', debug=True)
+
+
 
 
 

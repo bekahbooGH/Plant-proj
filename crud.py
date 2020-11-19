@@ -25,9 +25,9 @@ def get_users():
     return User.query.all()
 
 
-# def get_user_by_id(user_id):
+def get_user_by_id(user_id):
 
-#     return User.query.get(user_id)
+    return User.query.filter(User.user_id == user_id).first()
 
 def get_user_by_email(user_email):
     """Return a user by email."""
@@ -155,7 +155,6 @@ def get_plant_by_location(location_id):
     # elif this_plant.location_id == 4:
     #     Location.plant_location = "West Facing"
     return this_plant  
-
 
 
 
