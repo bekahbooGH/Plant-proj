@@ -145,21 +145,39 @@ def show_plant_recommends():
     return render_template('plant_recommends.html', plant_recommends=plant_recommends) #KEEP AN EYE ON THIS AND ASK FOR LUCIA IF YOU GET A PROBLEM
 
 @app.route('/profile', methods=['POST'])
-def show_plant_profile():
+def create_plant_profile():
     """Create profile for a specific user and add plant."""
-    # user_id = request.form['user-id']
-    # print(f"***************{user_id}********")
-    # user = crud.get_user_by_id(1)
-    user_id = session['user_id']
+    if session.get('user_id'):
+        user_id = session['user_id']
+        print(f'***********{user_id}***************')
+        plant_id= request.form['plant-id']
+        plant_profile = crud.create_plant_profile(user_id, plant_id)
+        return render_template('plant_profile.html', plant_profile=plant_profile)
 
-    plant_id= request.form['plant-id']
-    # print(f"*******{plant_id}*************")
-    # plant = crud.get_plant_by_id(plant_id)
-    # print(f'********{plant}********')
-    plant_profile = crud.create_plant_profile(user_id, plant_id)
+    else:
+        flash(f'Your account was not found, please login or create an account')
+        session['name'] = 'no-account-found-please-create-account'
+        return redirect('/login')
+
+# @app.route('/plants/<plant_id>', methods=["POST"])
+# def send_to_profile(plant_id):
+#     if session['user_id']:
+#         user_id = session['user_id']
+
+#         plant_id= request.form['plant-id']
     
+#         plant_profile = crud.create_plant_profile(user_id, plant_id)
+#         return render_template('plant_profile.html', plant_profile=plant_profile )                
 
-    return render_template('plant_profile.html', plant_profile=plant_profile)
+#     else:
+#         flash(f'Your account was not found, please login or create an account')
+#         session['name'] = 'no-account-found-please-create-account'
+#         return redirect('/')
+
+
+
+
+
 
 # @app.route('/profiles/<plant_profile_id>')
 # def plant_profile():
@@ -168,10 +186,8 @@ def show_plant_profile():
 #     profile = crud.get_profile_by_id(plant_profile_id)
 #     print(profile)
 
-    return render_template('plant_profile.html', profile=profile)
-# "/add-to-profile" method="POST">
-#   <p>Add to profile?</p>
-#   <input type="submit">
+   
+
 
 if __name__ == '__main__':
     connect_to_db(app)
@@ -181,21 +197,6 @@ if __name__ == '__main__':
 
 
 
-    # if light_id == "1":
-    #     plant_lighting = "Low Light"
-    # if light_id == "2":
-    #     plant_lighting = "Medium Light"
-    # if light_id == "3":
-    #     plant_lighting = "Bright Light"
-
-    # if location_id == "1":
-    #     plant_location = "North Facing"
-    # if location_id == "2":
-    #     plant_location = "East Facing"
-    # if location_id == "3":
-    #     plant_location = "South Facing"
-    # if location_id == "4":
-    #     plant_location = "West Facing"
 
 #     @app.route("/add_to_cart/<melon_id>")
 # def add_to_cart(melon_id):
