@@ -129,33 +129,6 @@ def get_plant_by_location(location_id):
     return Plant.query.filter(Plant.location_id == location_id).all()
 
 
-# plants_lighting = Plant.query.filter_by(plant.lighting_id)
-# plants_location = Plant.query.filter_by(plant.location_id)
-
-# def get_plant_by_lighting(light_id):
-
-#     this_plant =  Plant.query.get(light_id)
-#     if this_plant.light_id == 1:
-#         Lighting.plant_lighting = "Low Light"
-#     elif this_plant.light_id == 2:
-#         Lighting.plant_lighting = "Medium Light"
-#     elif this_plant.light_id == 3:
-#         Lighting.plant_lighting = "Bright Light"
-#     return this_plant
-    
-# def get_plant_by_location(location_id):
-
-#     this_plant =  Plant.query.get(location_id)
-    # if this_plant.location_id == 1:
-    #     Location.plant_location = "North Facing"
-    # elif this_plant.location_id == 2:
-    #     Location.plant_location = "East Facing"
-    # elif this_plant.location_id == 3:
-    #     Location.plant_location = "South Facing"
-    # elif this_plant.location_id == 4:
-    #     Location.plant_location = "West Facing"
-    return this_plant  
-
 
 
 def create_plant_profile(user_id, plant_id):
@@ -168,6 +141,10 @@ def create_plant_profile(user_id, plant_id):
 
     return plant_profile
 
+def get_profile_by_user_id(user_id):
+
+    profile =  Profile.query.filter(Profile.user_id == user_id).all()
+    return profile
 
 def get_profile_by_id(plant_profile_id):
 

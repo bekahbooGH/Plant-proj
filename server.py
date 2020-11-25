@@ -151,28 +151,33 @@ def create_plant_profile():
         user_id = session['user_id']
         print(f'***********{user_id}***************')
         plant_id= request.form['plant-id']
-        plant_profile = crud.create_plant_profile(user_id, plant_id)
-        return render_template('plant_profile.html', plant_profile=plant_profile)
+        current_plant_profile = crud.create_plant_profile(user_id, plant_id)
+        print(f'***********{current_plant_profile}***************')
+        plants_added = crud.get_profile_by_user_id(user_id)
+        print(f'***********{plants_added}***************')
+
+        return render_template('plant_profile.html', plants_added=plants_added)
 
     else:
         flash(f'Your account was not found, please login or create an account')
         session['name'] = 'no-account-found-please-create-account'
         return redirect('/login')
 
-# @app.route('/plants/<plant_id>', methods=["POST"])
-# def send_to_profile(plant_id):
-#     if session['user_id']:
-#         user_id = session['user_id']
-
-#         plant_id= request.form['plant-id']
+    @app.route("/updateuserfname", methods=["POST"])
+    def update_user_fname():
+        """Allow user to update their own fname from their profile screen."""
+        
+        existing_user = crud.get_user_by_email(session['email']) ### USES THE SESSION INFO INSTEAD OF A A HIDDEN INPUT ###
+        fname = request.form.get('name-input')
     
-#         plant_profile = crud.create_plant_profile(user_id, plant_id)
-#         return render_template('plant_profile.html', plant_profile=plant_profile )                
+        crud.update_user_fname(existing_user.id, fname)
+    
+        session['name'] = fname  ### THEN ALSO OVERWIRE/UPDATE/RESET THE SESSION INFO FOR THE THING THAT YOU'RE ALSO SETTING IN THE DB##
+        flash(f"Your name has been successfully updated to: ''{fname}''")
+    
+        return redirect('/profile')
 
-#     else:
-#         flash(f'Your account was not found, please login or create an account')
-#         session['name'] = 'no-account-found-please-create-account'
-#         return redirect('/')
+
 
 
 

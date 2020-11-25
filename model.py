@@ -94,7 +94,7 @@ class Profile(db.Model):
 
 
     def __repr__(self):
-        return f'<Profile plant_profile_id={self.plant_profile_id}>'
+        return f'<Profile plant_profile_id={self.plant_profile_id} user_id={self.user_id} plant_id={self.plant_id}>'
 
 
 

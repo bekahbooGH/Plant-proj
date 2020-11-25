@@ -3,10 +3,23 @@
 
 {% block body %}
   <h1>Plant Profile</h1>
-
-  <h2>Navigation</h2>
+{% if plants_added %}
   <ul>
-    <li><a href="/plants">I'm a genius!!</a></li>
-  
+    {% for profile in plants_added %}
+    <p>
+    {{ profile.plant.plant_name }}
+    </p>
+    <p>
+      {{ profile.plant.plant_name }}
+      </p>
+      <form action="/remove-plant" method="POST">
+
+       {# TODO #}
+
+  <input id="plant-id" name="plant-id" type="hidden" value="{{ plant.plant_id }}" >     {# make sure this is actually how hidden imputs are formatted #}
+  <button type="submit">Remove from profile</button>
+</form>
+    {% endfor %}
+    {% endif %}
   </ul>
 {% endblock %}
