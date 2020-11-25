@@ -72,7 +72,7 @@ def process_login():
             session['current_user'] = user.fname
             session['user_id'] = user.user_id
             flash('Success! Happy plantin!')
-            return redirect('/plant-form')
+            return redirect('/user-home')
         elif password != user.password:
             flash('Incorrect password. Try again.')
             return redirect('/login')
@@ -87,6 +87,11 @@ def show_registration():
 
     return render_template("new_user_form.html")
 
+@app.route('/user-home')
+def show_user_home():
+    """Show user homepage."""
+
+    return render_template("user_home.html")
 
 @app.route('/register-user', methods=['POST'])
 def register_user():
@@ -140,9 +145,16 @@ def show_plant_recommends():
             plant_recommends.append(plant)
 
     print(plant_recommends)
-    
 
-    return render_template('plant_recommends.html', plant_recommends=plant_recommends) #KEEP AN EYE ON THIS AND ASK FOR LUCIA IF YOU GET A PROBLEM
+    return render_template('plant_recommends.html', plant_recommends=plant_recommends) 
+
+@app.route('/profile')
+def show_plant_profile():
+    """Show plant profile."""
+    user_id = session['user_id']
+    plants_added = crud.get_profile_by_user_id(user_id)
+    return render_template('plant_profile.html', plants_added=plants_added)
+
 
 @app.route('/profile', methods=['POST'])
 def create_plant_profile():
@@ -153,6 +165,7 @@ def create_plant_profile():
         plant_id= request.form['plant-id']
         current_plant_profile = crud.create_plant_profile(user_id, plant_id)
         print(f'***********{current_plant_profile}***************')
+        
         plants_added = crud.get_profile_by_user_id(user_id)
         print(f'***********{plants_added}***************')
 
@@ -163,7 +176,7 @@ def create_plant_profile():
         session['name'] = 'no-account-found-please-create-account'
         return redirect('/login')
 
-    @app.route("/updateuserfname", methods=["POST"])
+    @app.route("/update-user", methods=["POST"])
     def update_user_fname():
         """Allow user to update their own fname from their profile screen."""
         
@@ -201,7 +214,13 @@ if __name__ == '__main__':
 
 
 
+#       <form action="/remove-plant" method="POST">
 
+#        {# TODO #}
+
+#   <input id="plant-id" name="plant-id" type="hidden" value="{{ plant.plant_id }}" >     {# make sure this is actually how hidden imputs are formatted #}
+#   <button type="submit">Remove from profile</button>
+# </form>
 
 #     @app.route("/add_to_cart/<melon_id>")
 # def add_to_cart(melon_id):

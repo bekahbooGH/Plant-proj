@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Plant Profile{% endblock %}
+{% block title %}My Greenhouse{% endblock %}
 
 {% block body %}
   <h1>Plant Profile</h1>
@@ -12,14 +12,16 @@
     <p>
       {{ profile.plant.plant_name }}
       </p>
-      <form action="/remove-plant" method="POST">
 
-       {# TODO #}
-
-  <input id="plant-id" name="plant-id" type="hidden" value="{{ plant.plant_id }}" >     {# make sure this is actually how hidden imputs are formatted #}
-  <button type="submit">Remove from profile</button>
-</form>
     {% endfor %}
     {% endif %}
   </ul>
+  
+  <form action="/remove-plant" method="POST">
+
+    {# TODO #}
+
+<input id="plant-id" name="plant-id" type="hidden" value="{{ plant.plant_id }}" >     {# make sure this is actually how hidden imputs are formatted #}
+<button type="submit">Remove from profile</button>
+</form>
 {% endblock %}
