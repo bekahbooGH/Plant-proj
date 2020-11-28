@@ -81,6 +81,12 @@ def process_login():
         return redirect('/login')
 
 
+@app.route("/logout")
+def logout():
+    """Logout user."""
+    session.clear()
+    return redirect("/")
+
 @app.route('/register-user')
 def show_registration():
     """Show new user form."""
@@ -134,9 +140,6 @@ def show_plant_recommends():
     """Show plant recommendations."""
     lighting = request.args.get("lighting")
     location = request.args.get("location")
-    print(location)
-    print(lighting)
-    # show_plant(plant_id)
     plant_recommends = []
     light_recommends = crud.get_plant_by_lighting(lighting)
     location_recommends = crud.get_plant_by_location(location)
@@ -153,7 +156,12 @@ def show_plant_profile():
     """Show plant profile."""
     user_id = session['user_id']
     plants_added = crud.get_profile_by_user_id(user_id)
-    return render_template('plant_profile.html', plants_added=plants_added)
+    if plants_added == None:
+        flash('Your greenhouse is empty! How bout some new guests?')
+        return redirect ('/plant-form')
+
+    else:
+        return render_template('plant_profile.html', plants_added=plants_added)
 
 
 @app.route('/profile', methods=['POST'])
@@ -175,6 +183,17 @@ def create_plant_profile():
         flash(f'Your account was not found, please login or create an account')
         session['name'] = 'no-account-found-please-create-account'
         return redirect('/login')
+
+
+@app.route('/remove-plant', methods=['POST'])
+def remove_plant_():
+    """Remove plant from profile."""
+    user_id = session['user_id']
+    plant_profile_id= request.form['plant-id']
+    # profile = crud.get_profile_by_id(plant_profile_id)
+    current_plant_profile = crud.remove_plant(plant_profile_id)
+    plants_added = crud.get_profile_by_user_id(user_id)
+    return render_template('plant_profile.html', plants_added=plants_added)
 
     @app.route("/update-user", methods=["POST"])
     def update_user_fname():

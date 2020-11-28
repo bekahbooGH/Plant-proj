@@ -10,18 +10,17 @@
     {{ profile.plant.plant_name }}
     </p>
     <p>
-      {{ profile.plant.plant_name }}
+      <img src="{{ profile.plant.picture_path }}">
       </p>
+      <form action="/remove-plant" method="POST">
 
+        {# TODO #}
+    
+    <input id="plant-id" name="plant-id" type="hidden" value="{{ profile.plant_profile_id }}" >     {# make sure this is actually how hidden imputs are formatted #}
+    <button type="submit">Remove from profile</button>
+    </form>
     {% endfor %}
     {% endif %}
   </ul>
-  
-  <form action="/remove-plant" method="POST">
 
-    {# TODO #}
-
-<input id="plant-id" name="plant-id" type="hidden" value="{{ plant.plant_id }}" >     {# make sure this is actually how hidden imputs are formatted #}
-<button type="submit">Remove from profile</button>
-</form>
 {% endblock %}

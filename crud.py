@@ -34,10 +34,6 @@ def get_user_by_email(user_email):
 
     return User.query.filter(User.user_email == user_email).first()
 
-#TODO:     lighting_file = open(lighting_conversion.txt)
-# for line in file :
-#     line = line.rstrip()
-#     words = line.split('|')
 
 def create_lighting(plant_lighting):
     """Create a lighting type for plants"""
@@ -151,7 +147,13 @@ def get_profile_by_id(plant_profile_id):
     profile =  Profile.query.get(plant_profile_id)
     return profile
     
+def remove_plant(plant_profile_id):
+    """Remove a plant from profile for user."""
+    profile =  Profile.query.get(plant_profile_id)
 
+    db.session.delete(profile)
+    db.session.commit()
+    
 
 if __name__ == '__main__':
     from server import app
