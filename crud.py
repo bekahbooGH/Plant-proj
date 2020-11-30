@@ -81,14 +81,14 @@ def location_conversion(plant_location):
     return location_id
 
 
-def create_plant(plant_name, plant_description, light_id, location_id, picture_path):
+def create_plant(plant_name, plant_description, light_id, location_id, pic_src):
     """Create and return a new plant."""
 
     plant = Plant(plant_name=plant_name,
                 plant_description=plant_description,
                 light_id=light_id,
                 location_id=location_id,
-                picture_path=picture_path)
+                pic_src=pic_src)
 
     db.session.add(plant)
     db.session.commit()

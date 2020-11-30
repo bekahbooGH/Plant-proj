@@ -67,7 +67,7 @@ class Plant(db.Model):
     plant_description = db.Column(db.Text)
     light_id = db.Column(db.Integer, db.ForeignKey('lightings.light_id'))
     location_id = db.Column(db.Integer, db.ForeignKey('locations.location_id'))
-    picture_path = db.Column(db.String)
+    pic_src = db.Column(db.String)
 
 
     lighting = db.relationship('Lighting')

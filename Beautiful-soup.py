@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import random
+from urllib.parse import urljoin
+import wget
+import urllib
 
 locations = ["North Facing", "South Facing", "East Facing", "West Facing"]
 lighting = ["Bright Light", "Medium Light", "Low Light"]
@@ -17,7 +20,7 @@ houseplants = soup.find(id='plant-index')
 
 indiv_houseplants = houseplants.find_all(class_= "product-inner-box")
 
-csv_file = open('plant_data.csv', 'w')
+csv_file = open('plant_data_pics.csv', 'w')
 
 csv_writer = csv.writer(csv_file)
 csv_writer.writerow(['plant_name', ' plant_descr', 'plant_lighting', 'plant_location',' pic_src'])
@@ -53,9 +56,22 @@ for listing in indiv_houseplants:
         pic_src = plant_pic['src']
         if pic_src.endswith("jpg"):
             pic_src1 = pic_src
-            print(pic_src1)
+            filename = pic_src1
+            # image_urls = []
+            img_url = urljoin(url, pic_src1)
+            print(img_url)
+            # image_filename = wget.download(img_url)
+            # image_filename > images
+            # r = requests.get(img_url, stream=True)
+            # if r.status_code == 200:
+            #     r.raw.decode_content = True
+            #     with open(filename, 'wb') as f:
+            #         shutil.copyfileobj(r.raw,f)
 
 
+           
+            # image_urls.append(img_url)
+            # print(pic_src1)
        
         
         print()
@@ -63,10 +79,15 @@ for listing in indiv_houseplants:
 
 
 
-    csv_writer.writerow([plant_name, plant_descr, plant_lighting, plant_location, pic_src1])
+    csv_writer.writerow([plant_name, plant_descr, plant_lighting, plant_location, img_url])
 
 
 csv_file.close()
+
+
+
+# def download(url, images):
+#     ims = 
 
 
 # if __name =="__main__":

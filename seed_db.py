@@ -17,7 +17,7 @@ os.system('createdb plants')
 model.connect_to_db(server.app)
 model.db.create_all()
 
-with open('data/plants.json') as f:
+with open('data/plants3.json') as f:
     plant_data = json.loads(f.read())
 
 # TODO: lighting_file = open(lighting_conversion.txt)
@@ -44,17 +44,17 @@ plants_in_db = []
 for plant in plant_data:
     # Get the name, description, lighting, location, and picture_path from the plant
     # dictionary.
-    plant_name, plant_description, plant_lighting, plant_location, picture_path = (
+    plant_name, plant_description, plant_lighting, plant_location, pic_src = (
                                     plant['plant_name'],
                                     plant['plant_description'],
                                     plant['plant_lighting'],
                                     plant['plant_location'],
-                                    plant['picture_path'])
+                                    plant['pic_src'])
     
     light_id = crud.lighting_conversion(plant_lighting)
     location_id = crud.location_conversion(plant_location)
 
-    db_plant = crud.create_plant(plant_name, plant_description, light_id, location_id, picture_path)
+    db_plant = crud.create_plant(plant_name, plant_description, light_id, location_id, pic_src)
 
     plants_in_db.append(db_plant)
 
