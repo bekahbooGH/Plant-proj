@@ -4,6 +4,7 @@ from flask import (Flask, render_template, request, flash, session,
                    redirect)
 from model import connect_to_db
 import crud
+# Might have to import sys and os
 
 from jinja2 import StrictUndefined
 
@@ -195,21 +196,24 @@ def remove_plant_():
     plants_added = crud.get_profile_by_user_id(user_id)
     return render_template('plant_profile.html', plants_added=plants_added)
 
-    @app.route("/update-user", methods=["POST"])
-    def update_user_fname():
-        """Allow user to update their own fname from their profile screen."""
+    # @app.route("/update-user", methods=["POST"])
+    # def update_user_fname():
+    #     """Allow user to update their own fname from their profile screen."""
         
-        existing_user = crud.get_user_by_email(session['email']) ### USES THE SESSION INFO INSTEAD OF A A HIDDEN INPUT ###
-        fname = request.form.get('name-input')
+    #     existing_user = crud.get_user_by_email(session['email']) ### USES THE SESSION INFO INSTEAD OF A A HIDDEN INPUT ###
+    #     fname = request.form.get('name-input')
     
-        crud.update_user_fname(existing_user.id, fname)
+    #     crud.update_user_fname(existing_user.id, fname)
     
-        session['name'] = fname  ### THEN ALSO OVERWIRE/UPDATE/RESET THE SESSION INFO FOR THE THING THAT YOU'RE ALSO SETTING IN THE DB##
-        flash(f"Your name has been successfully updated to: ''{fname}''")
+    #     session['name'] = fname  ### THEN ALSO OVERWIRE/UPDATE/RESET THE SESSION INFO FOR THE THING THAT YOU'RE ALSO SETTING IN THE DB##
+    #     flash(f"Your name has been successfully updated to: ''{fname}''")
     
-        return redirect('/profile')
+    #     return redirect('/profile')
 
-
+@app.route('/map')
+def show_map():
+    
+    return render_template('map.html', map=map)
 
 
 
