@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}User Home{% endblock %}
+
+{% block body %}
+  <h1>Welcome {{ session['current_user'] }}!</h1>
+
+  <h2>Navigation</h2>
+  <ul>
+    <li><a href="/profile">My greenhouse guests</a></li>
+    <li><a href="/plant-form">My future plant babies</a></li>
+    <li><a href="/update-user">Click here to update your human profile</a></li>
+    <li><a href="/map">Nurseries near me</li>
+    <li><a href="/logout">Logout</li>
+
+      {# TODO #}
+
+
+{% endblock %}

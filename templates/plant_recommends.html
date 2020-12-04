@@ -3,13 +3,16 @@
 
 {% block body %}
     <h1>Recommended Plants</h1>
+    <div class="row">   
         {% for plant in plant_recommends %}
+        <div class="col-md-6">
         <li>
             <a href="/plants/{{ plant.plant_id }}">
             {{ plant.plant_name }}
            <img src = "{{ plant.pic_src }}" >
             </a>
         </li>
+    </div>
         {% endfor %}
-        </ul>
+    </div>
         {% endblock %}

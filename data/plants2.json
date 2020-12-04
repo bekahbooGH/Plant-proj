@@ -1,0 +1,898 @@
+[
+    {
+      "plant_name": "Delta Maidenhair Fern",
+      "plant_descr": "Very delicate beautiful fern from the West Indies. The frond stems are black in colour with gorgeous lime green leaves (pinnae). Easy to grow but needs high humidity, really really hates direct sun.\nAn elegant houseplant with black stalks and yellowy green, triangular fronds.",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Adiantum-raddianum-Fragrans-closeup.jpg"
+    },
+    {
+      "plant_name": "Blue rain Bromeliad",
+      "plant_descr": "A Truly stunning plant, and very very easy to look after. A very long lasting Blue and red flower spike with deep green glossy leaves. A real statement plant.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Achmeabluerainflower.jpg"
+    },
+    {
+      "plant_name": "Zebra Basket Vine",
+      "plant_descr": "This is a lovely dark green trailing house plant with oval shaped leaves with wonderful detailing in purple. Perfect for hanging baskets. The foliage really is stunning enough but it also flowers.",
+      "plant_lighting": "Low Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/aeschynanthus-marmoratus-detail.jpg"
+    },
+    {
+      "plant_name": "Lipstick plant",
+      "plant_descr": "A very easy to look after flowering trailer. Dark green glossy leaves and a stunning bight red flower. Needs good light to get the best flowering.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Aeschynanthus-pulcher-Mona-Lisa_detail.jpg"
+    },
+    {
+      "plant_name": "Chinese evergreen",
+      "plant_descr": "Another tough Chinese evergreen. Bold markings on the large thin leaves. Good for low light as well as those of us who are a little erratic with watering!\nWill grow outwards and upwards with ease up to a maximum of 1 metre.",
+      "plant_lighting": "Low Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Aglaonema_cutlass_detail.jpg"
+    },
+    {
+      "plant_name": "Red Secret",
+      "plant_descr": "Also known as Elephants Ear, this shiny iridescent plant originates from Borneo and first became commercially available in Hawaii. \nToday, it is pretty rare and something of a collectors item for established plant owners.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Alocasia_cuprea_detail.jpg"
+    },
+    {
+      "plant_name": "Aloe Vera",
+      "plant_descr": "Noted for its healing properties the Aloe vera plant is very popular in everything from cosmetics to medicinal uses. Apart from this it is also a great houseplant, easy to look after, oxygenates the air and looks great. An easy way to grow fresh air and plasters at the same time!",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Aloe_Vera_detail.jpg"
+    },
+    {
+      "plant_name": "Velvet Heart Anthurium",
+      "plant_descr": "A striking epiphyte originating in Mexico and found across the rainforests of South America, this bold and beautiful member of the Araceae family is coveted for its velvety leaves and vivacious colours. \nA great addition to any steamy bathroom or busy kitchen.",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Anthurium-Clarinervium-detail.jpg"
+    },
+    {
+      "plant_name": "Jungle King",
+      "plant_descr": "The King of the Jungle comes to British shores to lay down its rule! \nA very large aroid with plenty more room for growth, this is a relatively unknown anthurium that we expect to expand in popularity in coming years. \nIts leaves are absolutely massive.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Anthurium-ellipticum-detail-2.jpg"
+    },
+    {
+      "plant_name": "Hoop Pine",
+      "plant_descr": "One of the best houseplants and also one of the least known about. A cousin of the equally interesting monkey puzzle the Hoop Pine is a great indoor conifer. The needles (can be a little sharp when older) are a wonderful green/blue colour.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Araucaria_cunninghamii_bonsai_detail.jpg"
+    },
+    {
+      "plant_name": "Cast Iron Plant",
+      "plant_descr": "Aspidistra is a Victorian favourite related to the Dracaena and Beaucarnea now making a comeback because, as its common name suggests, it is almost impossible to kill.\nIn the United States of America it's has been known as the Barroom Plant.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Aspidistra_elatior_65cm_detail.jpg"
+    },
+    {
+      "plant_name": "Bird's Nest Fern",
+      "plant_descr": "A lush, leathery-leaved unusual fern with lance-shaped fronds, each with a slightly wavy edge. Native to eastern Asia, it commonly grows on tree trunks, cliffs and forests. Although endangered in the wild, it is a popular ornamental houseplant throughout Europe and the United St",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Asplenium-leslie-Detail.jpg"
+    },
+    {
+      "plant_name": "Japanese Bird's Nest Fern",
+      "plant_descr": "Lush green shiny leaves with a fractal-like ruffle make this easy to look after fern one of our favorite plants. Its really easy to look after but... it really likes a now pot now and then, otherwise, it dries out very very quickly and shrivels up!",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Asplenium-osaka-detail.jpg"
+    },
+    {
+      "plant_name": "Pony Tail Palm",
+      "plant_descr": "Beaucarneas are curious plants with a heavily swollen base and grass like foliage giving it a unique appearance. The the stem is used to store water which is a great help to those of us that forget the odd watering or are absent for a week or so.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Beaucarnea_recurvata_detail.jpg"
+    },
+    {
+      "plant_name": "Spotted begonia",
+      "plant_descr": "This is not your average hanging basket begonia but a tropical talking point! The long leaves have a lovely red backing as well as the striking symetrical patterning on the front. Warmth is the key with these plants this along with good light they will thrive.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Begonia_maculata_wightii_detail.jpg"
+    },
+    {
+      "plant_name": "Silver Lady",
+      "plant_descr": "Actually grows like a small tree fern, this fern will form a slender trunk with age. The palm like fronds will form a crown about 3 foot across in time creating a very tropical looking plant. Blechnums are lime intolerant so use rainwater or as a last resort if you are in a hard",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Bechnum-gibbum-detail-2.jpg"
+    },
+    {
+      "plant_name": "Rattlesnake plant",
+      "plant_descr": "Another beautiful Calathea from Brazil. Very bold markings on long elegant leaves. Great as a stand alone plant or as part of a tropical display.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Calathea_lancifolia_detail.jpg"
+    },
+    {
+      "plant_name": "Leopard Plant",
+      "plant_descr": "As part of the Marantaceae family, this exotic and bright plant is originally from the forest beds of Brazil, but will thrive on a dark shelf here in the UK.\nIt will tell you if it's unhappy, when its leaves curl up. A regular misting is likely to uncurl the leaves.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Calathea-leopardina-detail.jpg"
+    },
+    {
+      "plant_name": "Peacock Plant",
+      "plant_descr": "In vogue at the moment this luxurious Calathea is a true stunner! Very very large leaves with subtle colouration adorne this shade loving specimen.",
+      "plant_lighting": "Low Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Calathea_orbifolia_detail.jpg"
+    },
+    {
+      "plant_name": "Pin stripe Calathea",
+      "plant_descr": "One of our favourite plants. The leaves are almost black with striking pairs of symmetrical stripes running horizontally down the leaf. Needs warmth and hates dry air but find the spot and this is a show stopping plant.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Calathea_ornata_detail.jpg"
+    },
+    {
+      "plant_name": "Rose painted Calathea",
+      "plant_descr": "Large round leaves with a colourful almost stained glass quality to the top with intricate and bold symmetrical designs. The underneath of the leaves are a lovely rich purple. Great for darker warm rooms and offices.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Calathea_rosepicta_detail.jpg"
+    },
+    {
+      "plant_name": "Velvet Calathea",
+      "plant_descr": "The most tactile of houseplants, the leaves do really feel like the softest velvet. Not as bright as a lot of this family the leaves are a rich green on the top and a dark burgandy underneath. Long and arching form great for many interior design schemes.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Calathea_rufibarba_detail.jpg"
+    },
+    {
+      "plant_name": "String of Hearts",
+      "plant_descr": "This stunning evergreen succulent is a trailing vine that can spread up to 4 meters in length and 10cm in height. The leaves are shaped like hearts (hence the name) and are deep green with variegated silver markings. The stems are wire-thin and pinkish.\nDiscovered in 1881.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ceropegia_woodii_detail.jpg"
+    },
+    {
+      "plant_name": "Parlour palm",
+      "plant_descr": "For over a century Parlour palms have enjoyed a place in the British home. A low growing palm (up to 3 feet high) that is very tough it will tolerate a lot of abuse but with a small amount of care will thrive. Great in almost any room of the house.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Chamaedorea_elegans_detail.jpg"
+    },
+    {
+      "plant_name": "Metallic Palm",
+      "plant_descr": "A lesser known relative of the parlour palm, but just as easy. the wide fishtail like leaves have an almost metallic sheen, hence the name. Very slow growing but worth the wait! Great in almost any room of the house.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Chamaedorea_metallica_detail.jpg"
+    },
+    {
+      "plant_name": "Green Spider Plant",
+      "plant_descr": "A brilliantly easy plant to grow and propagate for the house plant novice!\nA staple favourite since victorian times, with soft green leaves and offshoots that generate mini plants that can be taken off and grown independently with ease. \nLooks fantastic hanging.",
+      "plant_lighting": "Low Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Chlorophytum_comosum_detail.jpg"
+    },
+    {
+      "plant_name": "Spider Plant",
+      "plant_descr": "Very common in homes but very very hard to buy. Incredibly easy. Grows almost anywhere in the house apart from under the stairs! Becoming increasingly popular.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/ChlorophytumFlower.jpg"
+    },
+    {
+      "plant_name": "Hawaiian Spider Plant",
+      "plant_descr": "Perfect as a houseplant for beginners or for those looking to propagate, this plant produces masses of tiny spider plant babies that can be easily planted and in just a couple of years will multiply exponentially. \nReally easy to care for and with more vibrant greens.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Chlorophytum-Hawaiian-Spider-detail.jpg"
+    },
+    {
+      "plant_name": "Areca Palm",
+      "plant_descr": "Areca palm. A great value bushy palm for a bright spot. Looking like a large bushy parlour palm the it is a great choice if you need a dense tall specimen. Needing a little more care than the parlour or kentia palm but the result is a magnificent plant.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Areca_palm_detail.jpg"
+    },
+    {
+      "plant_name": "Grape Ivy",
+      "plant_descr": "A common plant in the 70s and 80s now a real rarity. Brilliant if you are after an easy trailing plant to drape over or climb. Will tolerate a range of light conditions and will grow quickly if looked after.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Cissus-rhombifolia-detail.jpg"
+    },
+    {
+      "plant_name": "Croton Iceton",
+      "plant_descr": "Looking for a colourful yet stylish plant? This is it, Reds, pinks, yellows and greens adorn this lovely plant. Another plant that really lends itself to tall containers.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/CrotonIcetonLeaf.jpg"
+    },
+    {
+      "plant_name": "Wonder Plant",
+      "plant_descr": "It's called the Wonder Plant for a reason!\nThe colours produced by the leaves are almost unmatched. It is mainly orange and red that catch the eye, but the pattern they form is almost unreal in appearance.\nProduces inconspicuous flowers in its maturity.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Codiaeum-Nervia-detail.jpg"
+    },
+    {
+      "plant_name": "Croton Petra",
+      "plant_descr": "A well known plant grown in gardens in tropical areas all over the world. A kaleidoscope of colours which change with the age of the leaf adorn this lovely tree. Super choice for bright rooms.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Codiaeum_petra_detail.jpg"
+    },
+    {
+      "plant_name": "Hobbit Jade",
+      "plant_descr": "An interesting cultivar of Crassula with tube like leaves resembling little hunting horns. The overall effect is almost coral like. Its just as easy as the more common Jade plant.  Use a well drained compost and do not overwater especially over winter.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Crassula-horntree-detail.jpg"
+    },
+    {
+      "plant_name": "Golden Jade tree",
+      "plant_descr": "With a bright splash of colour this is a hard to find variety of money tree. The leaves have yellow and red margins that become even more distinct over the winter months. Bright light is best but constant direct sunlight will dull the colours as will not enough light.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Crassula_hummels_sunset_detail.jpg"
+    },
+    {
+      "plant_name": "Tenelli",
+      "plant_descr": "Another addition to our growing crassula selection, this one is particularly special. With fine fibrous hairs on the succulent leaves, it shimmers with a frosted appearance. It has a minty green hue, and sprouts miniature plants around the edge of the pot.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Crassula-tenelii-detail.jpg"
+    },
+    {
+      "plant_name": "Mini Jade Plant",
+      "plant_descr": "A lesser known Money tree with small compact leaves. The tidy growth habit gives it a look of a bonsai, very interesting and an easy plant for any bright location.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Crassula_minor_detail.jpg"
+    },
+    {
+      "plant_name": "Money tree",
+      "plant_descr": "A well known and loved succulent. Easy to look after and will in a few years become a magnificent specimen.  Use a well drained compost and do not overwater especially over winter.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Crassula_ovata_detail.jpg"
+    },
+    {
+      "plant_name": "Golden Mosaic",
+      "plant_descr": "An absolutely stunning recent addition to our range with a truly unique set of patterns making up the leaves of each plant. \nThe thin delicate stems hold up the large oval leaves which unfurl in the morning and close up again at night, making it a member of the prayer plant family.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ctenanthe-lubbersiana.jpg"
+    },
+    {
+      "plant_name": "The Never-Never Plant",
+      "plant_descr": "Also known as the Fishbone Prayer Plant for its special characteristic of closing its leaves during dark, like a pair of hands in prayer. \nThey can be found in the wild across the humid rainforest floors of South and Central America, as well as the West Indies.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ctenanthe_magnus_detail.jpg"
+    },
+    {
+      "plant_name": "Hare's Foot Fern",
+      "plant_descr": "What a scary plant! Davallia is like a cross between an asparagus and a tarantula. Little known and hard to forget Davallia is great for a bathroom but don't flush it down the plughole!",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Davallia_canariensis_detail.jpg"
+    },
+    {
+      "plant_name": "Dumb Cane",
+      "plant_descr": "Lovely foliage plants with large, usually variegated leaves. They will grow large, up to 2 metres tall, given the right conditions and care.\nCAUTION - the sap is poisonous and great care must be taken not to get sap on hands and to keep the plant away from children.",
+      "plant_lighting": "Low Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Dieffenbachia_detail.jpg"
+    },
+    {
+      "plant_name": "String of nickels",
+      "plant_descr": "A hard to find climbing houseplant with trailing strands of succulent, oval shaped leaves. It is an Epiphyte plant, meaning in the wild it will attach itself to trees or creep along branches, draping itself like curtains of green.\n Native to a wide range of tropical settings.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Dischidia_nummularia_detail.jpg"
+    },
+    {
+      "plant_name": "Dragon Tree 'Lemon and Lime'",
+      "plant_descr": "The name gives it away really! Broad leaves with bright green edges and a dark green mid band give this lovely plant a vibrant colourful look. As a bonus the canes are marbled with green and white.\nLikes it a little bit brighter than most dragon trees.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/DracaenaLemonandlimeLeaf.jpg"
+    },
+    {
+      "plant_name": "Compact Dragon tree",
+      "plant_descr": "Super stylish this dracaena is right up to date with modern decor. As the name suggests the dark green leaves are small and grow in tidy, compact profusion around the slow growing branches. A must for the modern room.",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Dracaena_compacta_detail.jpg"
+    },
+    {
+      "plant_name": "Dragon Tree 'Janet Craig'",
+      "plant_descr": "Bold and simple wide dark green leaves form the large crown of this choice Dracaena. A wonderful choice for a room or office with contemporary design. Although slower growing than d. marginata it will still reach a height of 6-7 feet. Easy to care for.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Dracaena_deremensis_janet_craig_detail.jpg"
+    },
+    {
+      "plant_name": "Dragon Tree warneckii",
+      "plant_descr": "A striking foliage plant. White bands of varying width run along each leaf blade creating a dazzling effect. A great choice if you are looking for a smaller specimen plant that is slow growing.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Dracaena_deremensis_detail.jpg"
+    },
+    {
+      "plant_name": "Madagascar Dragon Tree",
+      "plant_descr": "Easy foliage houseplant with thin variegated leaves. Keep the humidity up to stop leaf drop. A great plant for kitchens. \nSpecimens vary a lot, and sometimes we have some absolutely stunning branched trees that add complexity and sharpness to a modern interior.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Dracaena_marginata_180cm_detail.jpg"
+    },
+    {
+      "plant_name": "Pleomele Anita",
+      "plant_descr": "These beautiful branched specimens are perfect if you are after something different and stylish. Consider using Cubico containers to give it even more Height to create a stunning specimen planting.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Draceana_reflexa_anita_variegata_detail.jpg"
+    },
+    {
+      "plant_name": "Mexican Hens and Chicks",
+      "plant_descr": "Easy and very very beautiful. For that sun drenched spot Echeverias are a wonderful small plant to grow. Not fussy about the cold (keep it dry over the cold period). The flowers although small are stunning as they unfurl.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Echeveria_cheyenneclose.jpg"
+    },
+    {
+      "plant_name": "Compton Carousel",
+      "plant_descr": "A very rare and very special succulent.\nThis is something on the wish list of many house plant enthusiasts, and something we are very proud to have in stock. Probably the single most sought after succulent in history.",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Echevieria-comptons-carousel-2.jpg"
+    },
+    {
+      "plant_name": "Fishbone cactus",
+      "plant_descr": "A very very unusual epiphytic (Grows on other plants) cactus. Amazing long wavey leaves and a stunning flower.\nNeeds to be hung somewhere to get the best view. They seem easy to grow we have been trialing them for a year now and no problems!",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/epiphyllum-anguliger-detail.jpg"
+    },
+    {
+      "plant_name": "Devils Ivy",
+      "plant_descr": "A large leaved climber with heart shaped leaves similar to Philodendron but with a yellow marbled variegation. Out of the stem grow aerial roots which are best given a moss pole to cling to, misting the pole occasionally will give you a much healthier plant.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Epipremnum_aureum_detail.jpg"
+    },
+    {
+      "plant_name": "Marble Queen",
+      "plant_descr": "In fitting with the recent national obsession with variegated climbing plants, this is a wonderful addition to our home grown collection of Epipremnums.\nReally easy to grow and fantastic at cleaning the air, the marbling on this plant is so varied and wonderful.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Epipremnum-marble-queen-detail.jpg"
+    },
+    {
+      "plant_name": "Golden Pothos",
+      "plant_descr": "Golden by name and golden by nature, the leathery foliage looks fantastic in a hanging pot or grown up a moss pole.\nA climber famed for its large, heart shaped yellow leaves that boast impressive colour and vibrancy.\nAerial roots can be found shooting from the stem.",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Epipremnum-golden-pothos-detail.jpg"
+    },
+    {
+      "plant_name": "Bengal Fig",
+      "plant_descr": "Not a very well known type of fig, large leaves a little like rubber plant have wonderfully elegant pale green veins that show up beautifully against the dark green of the leaf. Not difficult to look after and is a great choice if you are looking for something a little more unusual.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus_benghalensis_detail.jpg"
+    },
+    {
+      "plant_name": "Ficus benghalensis Roy",
+      "plant_descr": "An unusual and not-well-known variety of fig, this is a fantastic choice for those who want something different that's also easy to care for.\nIt comes from East Asia. In Southern China and Vietnam, these grow into full sized trees.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus-benghalensis-roy-detail.jpg"
+    },
+    {
+      "plant_name": "Weeping fig",
+      "plant_descr": "One of the best known and widely used houseplants. This is for a good reason, glossy leaves grow in profusion creating the classic indoor tree. Keep out of draughts and away from radiators to avoid the 'weeping' and keep the fig. Over winter it will need watering less frequently.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus_benjamina_open_braid_detail.jpg"
+    },
+    {
+      "plant_name": "Long leaved fig",
+      "plant_descr": "A lovely variety of fig with long graceful leaves. A good choice of specimen for an elegant bright room. The new leaves can be a peach colour with reddish stems giving more interest to this lovely plant.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus_binnendijkii_alii_detail.jpg"
+    },
+    {
+      "plant_name": "Fig Tree",
+      "plant_descr": "A choice fig for a bright position. Large leaves with a red tint on the new growth adorne this lush robust specimen. A great alternative to the more common weeping fig.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus-amstel-king-new-leaf.jpg"
+    },
+    {
+      "plant_name": "African fig tree",
+      "plant_descr": "An unusual indoor plant, this fig originates from central Africa and has long rounded dark green leaves. Quite quick growing in the right spot in your house and will tolerate lower light levels. Great if you want to grow an indoor tree! Undemanding, provided it is not over-watered.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus_-cyathistipula_detail.jpg"
+    },
+    {
+      "plant_name": "Rubber Plant",
+      "plant_descr": "Very well known spiecies of fig. The rubber plant is a very easy plant to look after. It can grow large and loose leaves at the base of the plant but can be cut back over the winter when the rubber sap will not fill up the pot! 'Bali' is a great cultivar with bright red leaf.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus_elastica_bali_detail.jpg"
+    },
+    {
+      "plant_name": "Fiddle leaf fig",
+      "plant_descr": "The Fiddle leaf fig, glorious and exotic indoor tree . Branches will grow from the leaf bases in time creating a wonderfully tropical specimen. Unbelievably fashionable its 'the' plant of the decade, so far! It is not hard but prefers a bright spot, near a window.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus_lyrata_detail.jpg"
+    },
+    {
+      "plant_name": "Chinese Banyan",
+      "plant_descr": "Bizarre bonsai like fig from tropical and sub tropical areas. Succulent like leaves and contorted trunk create a fascinating plant Treat like most indoor figs water when dry over the summer and don't move it from place to place.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus_microcarpa_detail.jpg"
+    },
+    {
+      "plant_name": "Indian laurel",
+      "plant_descr": "Ficus nitida aslo known as Indian laurel. It has a lovely silvery bark with larger leaves than the well known Ficus benjamina. The glossy leaves grow in profusion creating the classic indoor tree. Keep out of draughts and away from radiators to avoid the 'weeping'.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus_nitida_160cm_detail.jpg"
+    },
+    {
+      "plant_name": "Variegated Rusty Fig",
+      "plant_descr": "With densely packed, rich foliage in a neat topiary style sphere, you have to get close to this plant to appreciate how varied and fascinating the leaves really are on this gorgeous and rare Ficus.\nNative to Eastern Australia.",
+      "plant_lighting": "Low Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus-rubiginosa-variegata-detail.jpg"
+    },
+    {
+      "plant_name": "Triangle Fig",
+      "plant_descr": "One of the easiest indoor Figs. The unusual triangular leaves are quite thick and tough (shows it can take a bit of neglect/underwatering). We have had this species here at the nursery for years and have found it incredibaly unfussy.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Ficus-triangularis-sweetheart-close.jpg"
+    },
+    {
+      "plant_name": "Nerve Plant",
+      "plant_descr": "Also known as the Mosaic Plant, this gorgeously vibrant and colourful vivarium is a great addition to any terrarium.\nWith flame red or tiger white highlights, they look incredible as a pair. The iridescent quality of the leaves is truly stunning.",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Fittonia_detail.jpg"
+    },
+    {
+      "plant_name": "Flame Lily",
+      "plant_descr": "Availlable May/June 2018\nA truly stunning climber. Ideal for conservatories. It will grow about 2 meteres a year and give a magnificent display of flowers.Support is needed as is grows using tendrills which grow out of the leaf ends.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/gloriosa_rothscildianna.jpg"
+    },
+    {
+      "plant_name": "Rose of China",
+      "plant_descr": "An exotic beauty of a flower. From China this lovely plant will flower for 5-6 months of the year if looked after. One of our favourite flowering indoor plants, not sure why it is not grown more in bright locations indoors.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Hibiscus_rosa-sin_seppe_Close.jpg"
+    },
+    {
+      "plant_name": "Kentia Palm",
+      "plant_descr": "Now relatively well known in the UK the Kentia Palm is a wonderful specimen palm, taking low light levels (give more light to larger specimens) and needing little specialist care it will add an air of the exotic into any room.",
+      "plant_lighting": "Low Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Howea_forsteriana_detail.jpg"
+    },
+    {
+      "plant_name": "Wax Flower",
+      "plant_descr": "Beautiful almond shaped leaves growing in long vines. Dark green with white and pink edges, stems and new leaves are bright pink. Another very very easy plant! The flowers are a lovely shade of pink and have a glorious scent.",
+      "plant_lighting": "Low Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Hoya_carnosa_tricolour_detail.jpg"
+    },
+    {
+      "plant_name": "Hot Lips",
+      "plant_descr": "Kalanchoe thyrsiflora is a striking, colourful, beautiful plant, also known as \"Hot Lips\" or \"desert cabbage\", from South Africa. It is a compact plant, with a silvery green bloom forming a rosette, with bright red tips on its leaves. It will grow a single flowering stem.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Kalanchoe_hot_lips_detail.jpg"
+    },
+    {
+      "plant_name": "Chocolate Soldier",
+      "plant_descr": "A cultivar of the Panda plant, this hard to pronounce (kal-an-ko-ee) succulent is perfect for beginners. Also great as a gift for succulent lovers, or for collectors looking for something unusual.\nAn unusual looking thing, with its fibrous hairs giving it a frosted appearance.",
+      "plant_lighting": "Low Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Kalanchoe-chocolate-soldier-detail.jpg"
+    },
+    {
+      "plant_name": "Forest Cactus",
+      "plant_descr": "Another impactful plant that thrives on neglect, with large hanging leaves that curve and droop in unique patterns giving each plant a unique identity.\nAn epiphytic cactus, it requires minimal watering and barely any sunshine to flourish.",
+      "plant_lighting": "Low Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Lepismium_bolivianum_detail.jpg"
+    },
+    {
+      "plant_name": "Prayer Plant",
+      "plant_descr": "This used to be a very common houseplant, adorning dark shelves and bottle gardens all over the UK. For some reason it is now very hard to find but after looking for some time we are now growing this delightful easy to look after plant.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Maranta_kerchoveana_detail.jpg"
+    },
+    {
+      "plant_name": "Herringbone Plant",
+      "plant_descr": "An old favourite Maranta (sometimes called prayer plant and sold as Maranta tricolour) has almost the same popularity as the spider plant. One of the most intricately patterned leaves in nature giving it its place on the nations top ten houseplants.",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/MarantaLECloseup.jpg"
+    },
+    {
+      "plant_name": "Medinilla",
+      "plant_descr": "Possibly the most spectacular flowering houseplant available. The exotic pink flowerhead can reach up to 50cm in length hanging down from the main plant that in addition has large oval dark green leaves with light veining. A truly incredible houseplant.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/MedinillaCloseup.jpg"
+    },
+    {
+      "plant_name": "Kangaroo Fern",
+      "plant_descr": "Wonderful hanging fern native to New Zealand and Australia. Interesting rhizomes creep around the outside.\nFirm leathery fronds that are oddly shaped and vary in size\nIf you're after a big exotic specimen to hang in a mid light to dark room this is the one!",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Microsorum_diversifolum_detail.jpg"
+    },
+    {
+      "plant_name": "Five Holes Plant",
+      "plant_descr": "This extraordinary tropical plant is naturally a climber but can also be a hanging plant to create a trailing plant instead. Originally from South America, this plant does amazingly well in a well lit area but isn't so good with direct sunlight.",
+      "plant_lighting": "Low Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Monstera_adansonii_detail.jpg"
+    },
+    {
+      "plant_name": "Swiss Cheese Plant",
+      "plant_descr": "Originally from the rain forests of Central and South America, where they climb up trees to reach higher light levels, consequently sturdy support is essential as stems can reach a height of 20' or more. They are easy to grow.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Monstera_deliciosa_detail.jpg"
+    },
+    {
+      "plant_name": "Monstera Peru",
+      "plant_descr": "Monsteras have skyrocketed in popularity in recent years and this stunning plant is a must have for any cheese plant enthusiast!\nThe rubbery leaves have a rigid, corrugated quality to them. The depth of the veins in the leaves is remarkable.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Monstera_karstenianum_detail.jpg"
+    },
+    {
+      "plant_name": "Dwarf Cavendish banana",
+      "plant_descr": "If you were so inclined to look into the history of edible bananas then the name Cavendish is very very pivotal. Get your own tropical slice of horticultural and agricultural history with these rewarding plants. We love them, feed them, water them, and re pot them in the spring.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Musa-detail.jpg"
+    },
+    {
+      "plant_name": "Prickly pear",
+      "plant_descr": "A large group (genus) of well known plants that make for a very charechterful housplants that are very very easy to grow in a sunny spot. The main feature are the large paddle like segments (cladodes) and the colurful fruit. Watch out for the spines though.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Optuntia_detail.jpg"
+    },
+    {
+      "plant_name": "False Shamrock",
+      "plant_descr": "An easy to care for compact indoor perennial plant with an attractive display of burgandy-red clover-like foliage from spring to autumn and edible, tubular pink flowers throughout the summer. A rare and sought-after houseplant which has risen in popularity.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Oxalis_triangularis_purpurea.jpg"
+    },
+    {
+      "plant_name": "Madagascar Palm",
+      "plant_descr": "Not really a palm but a tall growing succulent, this wonderful native of Madagascar is a very easy to look after plant that is definitely something out of the ordinary. Needs a bright spot",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Pachypodium-lamerii-detail.jpg"
+    },
+    {
+      "plant_name": "Verona Vein",
+      "plant_descr": "A trailing houseplant with small, dark green leaves which grow on large stems which like to creep.\nNative to Australia Australia and a relative of the \"Wingerd\", which is a climbing family originating from North America and east Asia.",
+      "plant_lighting": "Low Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Parthenocissus-striata-detail.jpg"
+    },
+    {
+      "plant_name": "Dark Green Beetle Radiator Plant",
+      "plant_descr": "A compact trailing plant that's great for livening up small spaces with not a lot of natural light. \nWith subtle red stems and bright green diamond leaves, it can be held from a hanging position to allow the foliage to flow through the air, or can be placed on a surface.",
+      "plant_lighting": "Low Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Peperomia-angulata-rocca-scuro-detail.jpg"
+    },
+    {
+      "plant_name": "Radiator plant",
+      "plant_descr": "Bright, colourful and like all the pepperomias very very interesting (There are over 1000 species!). The burgundy red of the leaves of rosso is shown in the light underside and the dark top, otherworldy flower spires top off this lovely slow-growing houseplant.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Pepperomia-rosso-close.jpg"
+    },
+    {
+      "plant_name": "Peperomia Hope",
+      "plant_descr": "A lovely little succulent from South America, with gorgeous leaves and an array of trailing stems. It's much bushier than most succulents, with a much greater appetite for water and growth as well.\nThe leaves are soft and leathery, and it can be easily propagated.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Peperomia-hope-detail.jpg"
+    },
+    {
+      "plant_name": "Baby Rubber Plant",
+      "plant_descr": "A compact houseplant with glossy leaves and a growth habit that is bushy in appearance. Spikes of white flowers on red stems appear during the growing season. Particuarly ideal for offices or shady spots as they grow well in low or fluorescent lighting.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/peperomia-obtusifolia-golden-gate-detail.jpg"
+    },
+    {
+      "plant_name": "String of Coins",
+      "plant_descr": "A fantastic hanging plant with red, tendril like stems sporting vibrant green leaves. Said to bring financial prosperity, much like the chinese money tree.\nA brilliantly rapid grower, with trailers that can be manouvered around a room to your liking.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Peperomia-pepperspot-detail.jpg"
+    },
+    {
+      "plant_name": "Raindrop Peperomia",
+      "plant_descr": "Also known as the Coin-Leaf Peperomia, this is a very manageable plant in the sense that it maintains a small size during its lifespan. Hence it can be placed anywhere without the hassle of repositioning or cutting back for its overgrowth. Rather, it will thicken and bush out.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Peperomia-raindrop-detail.jpg"
+    },
+    {
+      "plant_name": "Trailing Jade Plant",
+      "plant_descr": "A beautifully trailing succulent with round leaves and soft stems that shoot out in all directions from the pot. \nOriginating in South America, this perennial epiphyte loves the forest undergrowth and can be found in crevices. \nVery easy to care for.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Peperomia-Rotundifolia-Detail.jpg"
+    },
+    {
+      "plant_name": "Purple Congo",
+      "plant_descr": "A highly rare and coveted new addition to our range.\nOriginally from Indonesia, relatively little is known about these fascinating aroids. All we know is we love them!\nA deep dark purple hue compliments the lush green highlights.",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Philodendron-purplecongo.jpg"
+    },
+    {
+      "plant_name": "Philodendron Birkin",
+      "plant_descr": "A brilliantly bright and vibrant leafy species, grown right here by us! The streaks of bright neon yellow veins contrast so beautifully against the deep shiny green of the leaves that it's a stand-out plant on any windowsill, however packed it is with other plants!",
+      "plant_lighting": "Low Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Philodendron-Berkin-Detail.jpg"
+    },
+    {
+      "plant_name": "Velvet Heart",
+      "plant_descr": "A versatile and varied climber thats easy to look after and very different.\nThe leaves can change colour based on light levels, showing off deep ridged glossy veined foliage that shine with green, purple, orange and pink highlights.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Philodendron-micans-detail.jpg"
+    },
+    {
+      "plant_name": "Oak Leaf Philodendron",
+      "plant_descr": "Like big leaved climbers? This is a stunning alternative to the better known Cheese plant. Just as easy and in out opinion a bit more special. The leaves can in the right conditions grow to over a foot long!",
+      "plant_lighting": "Bright Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Philo-pedatum-Close1.jpg"
+    },
+    {
+      "plant_name": "Sweetheart Plant",
+      "plant_descr": "Simple elegant heart-shaped leaves adorn this easy to care for climbing interior plant. Will tolerate some cold and draughts so a great plant for that dark cold north facing room. Easy and a good starter plant, don't worry about it too much and feed it a few times over the summer.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Philodendron_Scandens_Moss_Stick_detail.jpg"
+    },
+    {
+      "plant_name": "Sweetheart Plant",
+      "plant_descr": "Packed with luscious green leaves streaked with rich yellow, the stems have a remarkable orange and pink shine. This climbing plant is great for beginners. Not only can it tolerate relatively cold, dark conditions, but it is also unfussy when it comes to watering.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Philodendron-brasil-detail.jpg"
+    },
+    {
+      "plant_name": "Philodendron Cobra",
+      "plant_descr": "Wow! What an absolute stunner of a philodendron!\nWith the recent obsession towards both climbers and variegation, we cannot see this staying in stock for long!\nA sure-fire must-have plant for the near future. We predict its popularity to skyrocket in the next year.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Philodendron-standleyana-cobra-detail.jpg"
+    },
+    {
+      "plant_name": "Blue Star Fern",
+      "plant_descr": "With soft, tender evergreen leaves sprouting in fanned patterns from the rhizomes, this is a favoured plant for beginners. It is really happy everywhere, as long as it is out of direct midday sunlight.\nThe plant has no known toxic affects to humans or pets.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Phlebodium-aureum-detail.jpg"
+    },
+    {
+      "plant_name": "Gray Artillery Plant",
+      "plant_descr": "Charming little spreading plant that looks incredible as a filler in a terrarium or cascading down a pot into the air or across a surface.\nSmall delicate turquoise leaves on a reddish stem that grow quickly in summer and are incredibly easy.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Pilea_glauca_detail.jpg"
+    },
+    {
+      "plant_name": "Chinese Money Plant",
+      "plant_descr": "This is an amazingly interesting plant as it has such unique circular, shiny, dark green leaves. One of the few houseplants made popular by people sharing the young offsetts rather than comercial horticulture. Also called the UFO plant!",
+      "plant_lighting": "Bright Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Pilea-peperomioides-close.jpg"
+    },
+    {
+      "plant_name": "Staghorn fern",
+      "plant_descr": "Stunningly wierd this is one of the most spectacular indoor plants. Growing in the wild on the branches and trunks of trees staghorn and elkhorn ferns can be suspended on wires and hung from a wall to display at eye level a truly spectacular fern.",
+      "plant_lighting": "Low Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Platycerium_bifurcatum_detail.jpg"
+    },
+    {
+      "plant_name": "Mini Monstera",
+      "plant_descr": "We want to make this clear - this plant is NOT a monstera at all! It resembles a cheese plant, but as you can see it bears a much catchier name pronounced rah-fid-oh-for-ah tet-rah-sperm-ah! Easy.\nIt's also not a philodendron, it belongs to the genus Rhaphidophora.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/rhaphidophora-tetrasperma-detail.jpg"
+    },
+    {
+      "plant_name": "Mistletoe cacti",
+      "plant_descr": "Rhipsalis is an epiphytic (grows on other plants) cacti found in tropical rainforests. Very interesting foliage and flowers to boot!. Very 'In' at the moment due to its wonderful shape and interesting colour. Easy to look after, best in a bright spot out of bright direct sunlight.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Rhipsalis_detail.jpg"
+    },
+    {
+      "plant_name": "Red Coral Cactus",
+      "plant_descr": "An absolute stunner with hypnotically pink flat stems. In high light conditions, the gorgeous stems will increase in vibrancy, reaching a feverish magenta colour. Do not expose to direct sun though as the leaves may become scorched and turn slightly yellow.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Rhipsalis-ramulosa-detail.jpg"
+    },
+    {
+      "plant_name": "Snake Plant",
+      "plant_descr": "If you are looking for a plant with a contemporary edge then the very unusual sansevieria cylindrico is hard to beat. Each leaf is pefectly round in cross section and the whole plant grows into a fantastic fan shaped specimen. Hard to find but very easy to grow.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Sansevieria-cylindrico-detail.jpg"
+    },
+    {
+      "plant_name": "Snake plant",
+      "plant_descr": "Wonderous bold markings adorn this easy care Sansevieria. Very very dark bandings contrast with the light. Like the mother in law's tongue it thrives with neglect and hates too much water. Repot it when pot bound and it will continue throwing up taller and taller leaves.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/New-plant-details-17.jpg"
+    },
+    {
+      "plant_name": "Mother in Law's Tongue",
+      "plant_descr": "Very similar to the staple favourite Sansevieria Laurentii, this gorgeous plant grows in an unusual yet striking rosette form, with the ends of the leaves facing out in all directions.\nAs with most snake plants, they are very easy to look after and maintain.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Sansevieria_futura_superba_detail.jpg"
+    },
+    {
+      "plant_name": "Mother in Law's Tongue",
+      "plant_descr": "A rare sort of snake plant, this particular species boasts sensational veriegation that changes as the plant matures. New leaves will be almost completely yellow, and as they develop they will take on increasingly deep green. \nThe leaves will also bend out as they age.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Sansevieria_golden_flame_detail.jpg"
+    },
+    {
+      "plant_name": "Mother-in-laws Tongue",
+      "plant_descr": "Tough and architectural, Sansevieria is the perfect plant for the modern interior. Long sword like leaves with gold trim can reach a metre in height, providing a sculptural specimen either planted on its own or in a group.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Sansevieria-laurentii-detail.jpg"
+    },
+    {
+      "plant_name": "Mother-in-laws Tongue",
+      "plant_descr": "Less well known than the regular mother in laws tounge, S. zeylanica is just as tough. Set to become a favorite with interior designers due to its grey green/silver foliage and striking shape.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Sansevieria-zeylanica-detail.jpg"
+    },
+    {
+      "plant_name": "Umbrella plant",
+      "plant_descr": "A well-known houseplant popular for generations the umbrella plant is an easy plant for a brightish spot. The leaflets are arranged in a whorl around the leaf stem giving the plant its common name, the number of leaflets increases as the plant ages.",
+      "plant_lighting": "Low Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Schefflera-variegated-detail.jpg"
+    },
+    {
+      "plant_name": "Satin Pothos",
+      "plant_descr": "A large leaved climber with heart shaped leaves similar to Philodendron but with a yellow marbled variegation. Out of the stem grow aerial roots which are best given a moss pole to cling to, misting the pole occasionally will give you a much healthier plant.",
+      "plant_lighting": "Low Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/ScindapsusPictusTrebiedetail.jpg"
+    },
+    {
+      "plant_name": "String of Beads",
+      "plant_descr": "A spreading and cascading houseplant threaded with succulent fleshy leaves which look like a string of beads. The leaves are up to 1 cm long and green with vertical, translucent lines. Flowers appear at various times of the year on tall stems as small, white and fuzzy daisies.",
+      "plant_lighting": "Low Light",
+      "plant_location": "East Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Senecio-herreianus-string-of-beads-detail.jpg"
+    },
+    {
+      "plant_name": "Peace Lily",
+      "plant_descr": "If there was to be a top ten most loved houseplants then we would bet on the Peace Lily being if not top very close. Large dark green leaves and its simple white spathe flower give it a look all to itself. We have afew varieties here the video below runs through some of them.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Peace_lily_detail.jpg"
+    },
+    {
+      "plant_name": "Giant white Bird of Paradise",
+      "plant_descr": "Big banana like leaves. This Bird of paradise plant is a great plant for a very sunny spot. Growth can be very quick with the leaves arching architecturally creating a fan. If you have the space it can flower but only after it gets to 2.5m+.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/New-plant-details-18.jpg"
+    },
+    {
+      "plant_name": "Bird of Paradise",
+      "plant_descr": "A truly wonderful plant from South Africa. The flower is well known accross the world for its striking colours and shape. Indoors in a bright spot it will flower for months providing a hard to beat exotic centrepiece! These are BIG very hard to find specimens.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "West Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/bird-of-paradise-detail.jpg"
+    },
+    {
+      "plant_name": "Calathea Triostar",
+      "plant_descr": "Very closely related to the Calatheas this is one of the brightest bold houseplants availlable today. Each leaf is slightly different with the cream, green purple and pink variegation working wonderfully with the bright purple/pink underside. Will tolerate more neglect.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Stromanthe-triostar-detail.jpg"
+    },
+    {
+      "plant_name": "Arrow Plant",
+      "plant_descr": "Known for its striking arrow shaped leaves, this is a relatively unusual plant that is easy to care for and grow. \nOnce the plant reaches maturity, the new leaves will form a new shape, taking on more of a star than an arrow. Three to five segments will form from each one.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Syngonium-white-arrow.jpg"
+    },
+    {
+      "plant_name": "Pink Robusta",
+      "plant_descr": "Also known as Syngonium Neon, this pretty and delicate goosefoot plant does wonders for a bright corner where it can be neglected and still grow strong. \nThe leaves with time will change from an arrow shape into a five-pronged 'goosefoot' shape.",
+      "plant_lighting": "Low Light",
+      "plant_location": "North Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Syngonium-Neon-Detail.jpg"
+    },
+    {
+      "plant_name": "Maiden's Blush",
+      "plant_descr": "A fabulously unfussy plant to look after, with striking pink and purple underleaf colour. \nThe growth forms in a rosette shape, so it looks teriffic in profile or above, meaning it is perfect for a desk, table or windowsill. \nBeing so undemanding, it will cope with irregular watering.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Tradescantia-sitara-detail.jpg"
+    },
+    {
+      "plant_name": "Wandering jew",
+      "plant_descr": "This really is a colourful specimen, striking leaves of purple, shades of green and silver. The trailing habit of this plant gives a cascade of colour to any environment, maximizing on limited avaible space.",
+      "plant_lighting": "Low Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Tradescantialeaf.jpg"
+    },
+    {
+      "plant_name": "Spineless Yucca",
+      "plant_descr": "Yuccas are pretty well known easy house plants, tolerating full sun and thriving on a minimal amount of care. Large and or branched specimens are hard to get hold of but make a fantastic specimen plant for a well lit room or conservatory.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Yucca-elephant-detail.jpg"
+    },
+    {
+      "plant_name": "ZZ Plant",
+      "plant_descr": "Only recently has this plant been seen in the UK (Its name is heard even less!). Zamioculcas is beginning to find itself brought into offices by interior landscapers, probably due to its affinity with modern design. Each of the branches coming from the compost is actually a leaf.",
+      "plant_lighting": "Medium Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Zanzibar_zamiifolia_detail.jpg"
+    },
+    {
+      "plant_name": "Stocky ZZ Plant",
+      "plant_descr": "A wild new contender against the old favourite zamioculcas, this is a much stockier and denser cultivar. It grows lower to the ground with smaller spaces between the leaves, but has many of the same characteristics.\nIt is happiest kept in high light conditions with minimal watering.",
+      "plant_lighting": "Bright Light",
+      "plant_location": "South Facing",
+      "pic_src": "https://www.houseofplants.co.uk/Resources/210temp/Zamioculcas-zenzi-detail.jpg"
+    }
+  ]
