@@ -88,3 +88,13 @@ for user in users_in_db:
     profile = crud.create_plant_profile(user_id, plant_id)
 
     profiles_in_db.append(plant_profile)
+
+# with open('data/facts.json') as f:
+#     plant_facts = json.loads(f.read())
+
+# options = []
+# for fact in plant_facts:
+#     option = fact["plant_fact"]
+#     options.append(option)
+
+# print(choice(options))

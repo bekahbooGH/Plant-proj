@@ -4,6 +4,8 @@ from flask import (Flask, render_template, request, flash, session,
                    redirect)
 from model import connect_to_db
 import crud
+import random
+import json
 # Might have to import sys and os
 
 from jinja2 import StrictUndefined
@@ -12,13 +14,21 @@ app = Flask(__name__)
 app.secret_key = "dev"
 app.jinja_env.undefined = StrictUndefined
 
+with open('data/facts.json') as f:
+    plant_facts = json.loads(f.read())
+
+options = []
+for facts in plant_facts:
+    fact = facts["plant_fact"]
+    options.append(fact)
+
 
 
 @app.route('/')
 def homepage():
     """View homepage."""
-
-    return render_template('homepage.html')
+    blurb = random.choice(options)
+    return render_template('homepage.html', blurb=blurb)
 
 
 @app.route('/plants')

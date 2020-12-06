@@ -5,10 +5,12 @@
     <h1>All Plants</h1>
     <div class="row">   
     {% for plant in plants %}
-    <div class="col-md-6">
+    <div class="col-md-2">
             <li>
                 <a href="/plants/{{ plant.plant_id }}">
                 {{ plant.plant_name }}
+                </div>
+                <div class="col-md-4">
                <img src = "{{ plant.pic_src }}" >
                 </a>
             </li>

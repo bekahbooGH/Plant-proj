@@ -26,7 +26,12 @@ defer
 
     <link rel="stylesheet" href="/static/css/site.css">
    
-    {% block head %}{% endblock %}
+    {% block head %}
+  
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:ital@1&display=swap" rel="stylesheet">
+    {% endblock %}
   </head>
   <body>
 
@@ -42,10 +47,12 @@ defer
         </li>
 
         {% if session.get('user_id') %}
-        <li class="nav-item"></li>
+        <li class="nav-item">
           <a class="nav-link" href="/logout">Logout</a>
-          <li class="nav-item"></li>
+        </li>
+          <li class="nav-item">
           <a class="nav-link" href="/user-home">User Home</a>
+        </li>
 
           {% else %}
 
@@ -62,6 +69,7 @@ defer
       {{ msg }}
     </p>
   {% endfor %}
+  
   {% block body %}{% endblock %}
     {% block after_body %}{% endblock %}
 

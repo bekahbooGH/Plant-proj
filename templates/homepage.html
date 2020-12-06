@@ -2,12 +2,22 @@
 {% block title %}Plant Recommendations Home{% endblock %}
 
 {% block body %}
-  <h1>Welcome!</h1>
+  <!-- <h1>Welcome!</h1> -->
 
-  <h2>Navigation</h2>
+  <!-- <h2>Navigation</h2> -->
+  <div class="row"> 
+    <div class="col-md-4">
   <ul>
     <li><a href="/plants">View all plants</a></li>
     <li><a href="/register-user">Create an Account</a></li>
     <li><a href="/login">Click here to go to the login page</a></li>
   </ul>
+  </div>
+<!-- </div> -->
+  
+    <div class="col-md-8">
+    <h1 id="quote">{{blurb}}</h1>
+
+</div>
+</div>
 {% endblock %}

@@ -5,22 +5,28 @@
   <h1>My Greenhouse</h1>
 {% if plants_added %}
   <ul>
+    
     {% for profile in plants_added %}
+   
     <p>
     {{ profile.plant.plant_name }}
     </p>
     <p>
       <img src="{{ profile.plant.pic_src }}">
       </p>
-      <form action="/remove-plant" method="POST">
 
-        {# TODO #}
+      <form action="/remove-plant" method="POST">
     
     <input id="plant-id" name="plant-id" type="hidden" value="{{ profile.plant_profile_id }}" >     {# make sure this is actually how hidden imputs are formatted #}
-    <button type="submit">Remove from profile</button>
+    <button type="submit">Remove from greenhouse</button>
     </form>
+  <p></p>
+  <p></p>
+  <p></p>
     {% endfor %}
+  
     {% endif %}
+    
   </ul>
 
 {% endblock %}
