@@ -21,6 +21,50 @@ li {
 div {
     font-family: 'Raleway', sans-serif;
 }
+
+.nav-link {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
 #quote {
-    
+    text-align: center;
+    font-weight: lighter;
+    margin-right: 1em;
+}
+
+.greens {
+    color:rgb(5, 170, 5)
+}
+
+.larger {
+    font-size: 30px;
+    margin-left: 2em;
+    color: black;
+}
+
+#title {
+    margin-left: 1em;
+    font-weight: bold;
+    font-size: 55px;
+}
+#find {
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.col-md-3 {
+    font-size: 25px;
+    margin-left: .5em;
+}
+
+#plantstitle {
+    text-align: center;
+    font-size: 55px;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+ul {
+    color: black;
 }

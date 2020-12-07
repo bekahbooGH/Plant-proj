@@ -2,12 +2,12 @@
 {% block title %}My Greenhouse{% endblock %}
 
 {% block body %}
-  <h1>My Greenhouse</h1>
+  <h1>My <b class="greens">Green</b>house</h1>
 {% if plants_added %}
   <ul>
     
     {% for profile in plants_added %}
-   
+    <div class="card" style="width: 18rem;">
     <p>
     {{ profile.plant.plant_name }}
     </p>
@@ -23,6 +23,7 @@
   <p></p>
   <p></p>
   <p></p>
+  <div class="card" style="width: 18rem;"></div>
     {% endfor %}
   
     {% endif %}
@@ -30,3 +31,12 @@
   </ul>
 
 {% endblock %}
+
+            <!-- <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div> -->
