@@ -137,7 +137,7 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     font-size: 25px;
 }
@@ -163,13 +163,17 @@
       color: inherit; 
     }
 
+    #higher {
+      margin-top: 2em !important;
+    }
+
 </style>
 {% endblock %}
 {% block body %}
 
 <div class="myDiv">
   <div class="bg">
-    <h1>Wuba-dub-a-dub-dub {{ session['current_user'] }}!</h1>
+    <h1 id="higher">Wuba-dub-a-dub-dub, {{ session['current_user'] }}!</h1>
 
     <!-- <h2>Navigation</h2> -->
     <ul>

@@ -2,15 +2,15 @@
 {% block title %}Recommended Plants{% endblock %}
 
 {% block body %}
-    <h1>Recommended Plants</h1>
+    <h1 id="plantstitle">Recommended <b class="greens">Plants</b></h1>
     <div class="row">   
         {% for plant in plant_recommends %}
-        <div class="col-md-2">
+        <div class="col-md-3">
         <li>
             <a href="/plants/{{ plant.plant_id }}">
             {{ plant.plant_name }}
         </div>
-        <div class="col-md-4">
+        <div class="col-md-2">
            <img src = "{{ plant.pic_src }}" >
             </a>
         </li>
