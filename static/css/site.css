@@ -30,7 +30,8 @@ div {
 #quote {
     text-align: center;
     font-weight: lighter;
-    margin-right: 1em;
+    margin-right: 0;
+    margin-left: 3em;
 }
 
 .greens {
@@ -39,14 +40,15 @@ div {
 
 .larger {
     font-size: 30px;
-    margin-left: 2em;
+    margin-left: 4em;
     color: black;
 }
 
 #title {
-    margin-left: 1em;
+    margin-left: 3em;
+    margin-top: .5em;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 75px;
 }
 #find {
     font-size: 35px;
@@ -100,13 +102,26 @@ a {
     margin-bottom: 0;
 }
 
-#userflash{
-    font-family: 'Dancing Script', cursive;
-    font-weight: bold;
+#userflash {
     font-size: 20px;
-    background-image: url(https://images.unsplash.com/photo-1593864062738-c54ec4a7a5c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80);
-    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #F8A034;
+    margin:0;
 }
+/* 
+
+#userflash:before {
+    background-image: url('https://images.unsplash.com/photo-1593864062738-c54ec4a7a5c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80');
+    margin: 0;
+    opacity: .7;
+    position: absolute;
+    z-index: 1;
+}
+
+h1 {
+    position: relative;
+
+  } */
 
 .frontpic {
     margin-left: auto;

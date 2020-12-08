@@ -65,9 +65,13 @@ defer
 
 
     {% for msg in get_flashed_messages() %}
+    
     <p class="flash-msg" id="userflash">
+      <hi>
       {{ msg }}
+    </hi>
     </p>
+  
   {% endfor %}
   
   {% block body %}{% endblock %}

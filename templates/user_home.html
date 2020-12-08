@@ -13,34 +13,6 @@
 <!--Custom styles-->
 <link rel="stylesheet" type="text/css" href="styles.css">
 <style>
-  /* body {
-    background-image: url(https://images.unsplash.com/photo-1593864062738-c54ec4a7a5c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: 0.5;
-    height: 100%; */
-    /* opacity: .4; */
-    /* } */
-
-  /* .myDiv {
-    position: relative;
-    z-index: 1;
-  } */
-
-  /* body .myDiv  { */
-      /* position: absolute; */
-      /* z-index: -1;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-image: url(https://images.unsplash.com/photo-1593864062738-c54ec4a7a5c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80);
-      background-size: cover;
-      background-repeat: no-repeat;
-      opacity: .4;
-      /* width: 100%; */
-      /* height: 100%; */
-    /* } */ 
     
     .container{
     height: 100%;
@@ -139,7 +111,8 @@
     display: flex;
     align-items: top;
     justify-content: center;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
 }
 
   .myDiv::before {
@@ -151,7 +124,7 @@
       right: 0px;
       bottom: 0px;
       left: 0px;
-      opacity: 0.4;
+      opacity: 0.5;
 }
 
     h1, li {
@@ -165,6 +138,7 @@
 
     #higher {
       margin-top: 2em !important;
+      font-family: 'Dancing Script', cursive;
     }
 
 </style>
@@ -173,7 +147,7 @@
 
 <div class="myDiv">
   <div class="bg">
-    <h1 id="higher">Wuba-dub-a-dub-dub, {{ session['current_user'] }}!</h1>
+    <h1 class="quote">Wuba-dub-a-dub-dub, {{ session['current_user'] }}!</h1>
 
     <!-- <h2>Navigation</h2> -->
     <ul>
