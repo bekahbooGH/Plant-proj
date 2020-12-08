@@ -68,3 +68,26 @@ div {
 ul {
     color: black;
 }
+
+a { 
+    color: inherit; 
+  }
+
+  .form {
+      text-align: center;
+  }
+
+  .bggreens {
+    background-color:rgb(5, 170, 5);
+}
+
+.plantsmarg {
+    margin-left: 2em;
+}
+
+#frontimg {
+    width: 400px;
+    height: 600px;
+    border: 2px solid white;
+    margin-left: 5em;
+}

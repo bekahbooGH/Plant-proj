@@ -3,27 +3,35 @@
 {% block title %}{{ plant.plant_name }} - Details{% endblock %}
 
 {% block body %}
+
+<div class="plantsmarg">
 <h1>{{ plant.plant_name }}</h1>
+
 
 <p>
   {{ plant.plant_description }}
 </p>
+
 <p>
-    {{ plant.lighting.plant_lighting }}
+    Loves {{ plant.lighting.plant_lighting }}
 </p>
+
+
 <p>
-    {{ plant.location.plant_location }}
+    Prefers {{ plant.location.plant_location }} windows
 </p>
+
 <img src="{{ plant.pic_src }}">
 
 <form action="/profile" method="POST">
 
-       {# TODO #}
+       
 
-  <input id="plant-id" name="plant-id" type="hidden" value="{{ plant.plant_id }}" >     {# make sure this is actually how hidden imputs are formatted #}
-  <button type="submit">Add to profile</button>
+  <input id="plant-id" name="plant-id" type="hidden" value="{{ plant.plant_id }}" >     
+  <br>
+  <button type="submit">Add to greenhouse</button>
 </form>
-
+</div>
 {% endblock %}
 
 
