@@ -1,4 +1,4 @@
-# """CRUD operations."""
+"""CRUD operations."""
 
 from model import db, User, Plant, Profile, Lighting, Location, connect_to_db
 
@@ -11,12 +11,9 @@ def create_user(fname, lname, user_email, zip_code, password):
                 user_email=user_email, 
                 zip_code=zip_code, 
                 password=password)
-
     db.session.add(user)
     db.session.commit()
-
     return user
-
 
 
 def get_users():
@@ -29,6 +26,7 @@ def get_user_by_id(user_id):
 
     return User.query.filter(User.user_id == user_id).first()
 
+
 def get_user_by_email(user_email):
     """Return a user by email."""
 
@@ -39,31 +37,28 @@ def create_lighting(plant_lighting):
     """Create a lighting type for plants"""
     
     lighting = Lighting(plant_lighting=plant_lighting)
-
     db.session.add(lighting)
     db.session.commit()
-
     return lighting
 
 def create_location(plant_location):
     """Create a location type for plants"""
     
     location = Location(plant_location=plant_location)
-
     db.session.add(location)
     db.session.commit()
-
     return location
+
 
 def lighting_conversion(plant_lighting):
     """Take in lighting name and return light_id."""
+
     if plant_lighting == "Low Light":
         light_id = 1
     elif plant_lighting == "Medium Light":
         light_id = 2
     elif plant_lighting == "Bright Light":
         light_id = 3
-
     return light_id
 
 
@@ -77,7 +72,6 @@ def location_conversion(plant_location):
         location_id = 3
     elif plant_location == "West Facing":
         location_id = 4 
-
     return location_id
 
 
@@ -89,30 +83,22 @@ def create_plant(plant_name, plant_description, light_id, location_id, pic_src):
                 light_id=light_id,
                 location_id=location_id,
                 pic_src=pic_src)
-
     db.session.add(plant)
     db.session.commit()
-
     return plant
 
 
 def get_plants():
     """returns all plants to page"""
 
-    all_plants = Plant.query.all()
-    # for plant in all_plants:
-
-
-    #     return plant
-    return all_plants
- 
+    # all_plants = Plant.query.all()
+    return Plant.query.all()
 
 
 def get_plant_by_id(plant_id):
 
-    this_plant =  Plant.query.get(plant_id)
-
-    return this_plant
+    # this_plant =  Plant.query.get(plant_id)
+    return Plant.query.get(plant_id)
 
 def get_plant_by_lighting(light_id):
     """Return a plant by lighting id."""
@@ -149,6 +135,7 @@ def get_profile_by_id(plant_profile_id):
     
 def remove_plant(plant_profile_id):
     """Remove a plant from profile for user."""
+    
     profile =  Profile.query.get(plant_profile_id)
 
     db.session.delete(profile)

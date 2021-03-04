@@ -2,9 +2,9 @@
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-# from datetime import datetime
 
 db = SQLAlchemy()
+
 
 class User(db.Model):
     """A user"""
@@ -19,10 +19,10 @@ class User(db.Model):
     password = db.Column(db.String)
 
     profile = db.relationship('Profile')
-    
 
     def __repr__(self):
         return f'<User user_id={self.user_id} email={self.user_email}>'
+
 
 class Lighting(db.Model):
     """A plant light condition"""
@@ -31,14 +31,11 @@ class Lighting(db.Model):
 
     light_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     plant_lighting = db.Column(db.String)
-   
 
     plant = db.relationship('Plant')
 
-
     def __repr__(self):
         return f'<Lighting light_id={self.light_id} lighting_type={self.plant_lighting}>'
-
 
 
 class Location(db.Model):
@@ -51,11 +48,9 @@ class Location(db.Model):
 
     plant = db.relationship('Plant')
     
-
     def __repr__(self):
         return f'<Location location_id={self.location_id} location_type={self.plant_location}>'
     
-
 
 class Plant(db.Model):
     """A plant"""
@@ -69,34 +64,28 @@ class Plant(db.Model):
     location_id = db.Column(db.Integer, db.ForeignKey('locations.location_id'))
     pic_src = db.Column(db.String)
 
-
     lighting = db.relationship('Lighting')
     location = db.relationship('Location')
     profile = db.relationship('Profile')
 
-
     def __repr__(self):
         return f'<Plant plant_id={self.plant_id} plant_name={self.plant_name} light_id={self.light_id}>'
+
 
 class Profile(db.Model):
     """A user's plant profile"""
 
     __tablename__ = 'profiles'
 
-    
     plant_profile_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
     plant_id = db.Column(db.Integer, db.ForeignKey('plants.plant_id'))
-    # plant_quantity = db.Column(db.Integer)
     
     user = db.relationship('User')
     plant = db.relationship('Plant')
 
-
     def __repr__(self):
         return f'<Profile plant_profile_id={self.plant_profile_id} user_id={self.user_id} plant_id={self.plant_id}>'
-
-
 
 
 def connect_to_db(flask_app, db_uri='postgresql:///plants', echo=True):
