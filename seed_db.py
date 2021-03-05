@@ -11,18 +11,14 @@ import server
 os.system('dropdb plants')
 os.system('createdb plants')
 
-
 model.connect_to_db(server.app)
 model.db.create_all()
-
 
 with open('data/plants3.json') as f:
     plant_data = json.loads(f.read())
 
-
 # Create plants, store them in list so we can use them
 # to create recommendations later
-
 
 crud.create_lighting("Low Light")
 crud.create_lighting("Medium Light")
@@ -55,5 +51,4 @@ users_in_db = crud.User.query.all()
 profiles_in_db = []
 for user in users_in_db:
     profile = crud.create_plant_profile(user_id, plant_id)
-
     profiles_in_db.append(plant_profile)

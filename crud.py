@@ -17,12 +17,13 @@ def create_user(fname, lname, user_email, zip_code, password):
 
 
 def get_users():
-    """returns all users"""
+    """Return all users."""
 
     return User.query.all()
 
 
 def get_user_by_id(user_id):
+    """Return a user by id."""
 
     return User.query.filter(User.user_id == user_id).first()
 
@@ -34,15 +35,16 @@ def get_user_by_email(user_email):
 
 
 def create_lighting(plant_lighting):
-    """Create a lighting type for plants"""
+    """Create a lighting type for plants."""
     
     lighting = Lighting(plant_lighting=plant_lighting)
     db.session.add(lighting)
     db.session.commit()
     return lighting
 
+
 def create_location(plant_location):
-    """Create a location type for plants"""
+    """Create a location type for plants."""
     
     location = Location(plant_location=plant_location)
     db.session.add(location)
@@ -64,6 +66,7 @@ def lighting_conversion(plant_lighting):
 
 def location_conversion(plant_location):
     """Take in location name and return location_id."""
+
     if plant_location == "North Facing":
         location_id = 1
     elif plant_location == "East Facing":
@@ -89,21 +92,22 @@ def create_plant(plant_name, plant_description, light_id, location_id, pic_src):
 
 
 def get_plants():
-    """returns all plants to page"""
+    """Return all plants to page."""
 
-    # all_plants = Plant.query.all()
     return Plant.query.all()
 
 
 def get_plant_by_id(plant_id):
+    """Return a plant by id."""
 
-    # this_plant =  Plant.query.get(plant_id)
     return Plant.query.get(plant_id)
+
 
 def get_plant_by_lighting(light_id):
     """Return a plant by lighting id."""
 
     return Plant.query.filter(Plant.light_id == light_id).all()
+
 
 def get_plant_by_location(location_id):
     """Return a plant by location id."""
@@ -111,10 +115,8 @@ def get_plant_by_location(location_id):
     return Plant.query.filter(Plant.location_id == location_id).all()
 
 
-
-
 def create_plant_profile(user_id, plant_id):
-    """Create and return a new plant profile for user."""
+    """Create and return a new plant greenhouse for user."""
 
     plant_profile = Profile(user_id=user_id, plant_id=plant_id)
 
@@ -123,18 +125,21 @@ def create_plant_profile(user_id, plant_id):
 
     return plant_profile
 
+
 def get_profile_by_user_id(user_id):
+    """Return a plant greenhouse by user id."""
 
     profile =  Profile.query.filter(Profile.user_id == user_id).all()
     return profile
 
 def get_profile_by_id(plant_profile_id):
+    """Return a plant greenhouse by profile id."""
 
     profile =  Profile.query.get(plant_profile_id)
     return profile
     
 def remove_plant(plant_profile_id):
-    """Remove a plant from profile for user."""
+    """Remove a plant from greenhouse by profile id."""
     
     profile =  Profile.query.get(plant_profile_id)
 

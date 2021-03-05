@@ -163,7 +163,7 @@ def show_plant_recommends():
 
 @app.route('/profile')
 def show_plant_profile():
-    """Show plant profile."""
+    """Show plant greenhouse."""
 
     user_id = session['user_id']
     plants_added = crud.get_profile_by_user_id(user_id)
@@ -176,7 +176,7 @@ def show_plant_profile():
 
 @app.route('/profile', methods=['POST'])
 def create_plant_profile():
-    """Create profile for a specific user and add plant."""
+    """Create greenhouse for a specific user and add plant."""
 
     if session.get('user_id'):
         user_id = session['user_id']
@@ -198,7 +198,7 @@ def create_plant_profile():
 
 @app.route('/remove-plant', methods=['POST'])
 def remove_plant_():
-    """Remove plant from profile."""
+    """Remove plant from greenhouse."""
     
     user_id = session['user_id']
     plant_profile_id= request.form['plant-id']
@@ -226,19 +226,6 @@ def show_map():
     
     return render_template('map.html', map=map)
 
-
-
-
-
-
-# @app.route('/profiles/<plant_profile_id>')
-# def plant_profile():
-#     """Show profile for a specific user."""
-
-#     profile = crud.get_profile_by_id(plant_profile_id)
-#     print(profile)
-
-   
 
 
 if __name__ == '__main__':
