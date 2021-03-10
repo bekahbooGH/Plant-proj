@@ -157,7 +157,6 @@ def show_plant_recommends():
     for plant in light_recommends:
         if plant in location_recommends:
             plant_recommends.append(plant)
-    print(plant_recommends)
     return render_template('plant_recommends.html', plant_recommends=plant_recommends) 
 
 
@@ -180,16 +179,10 @@ def create_plant_profile():
 
     if session.get('user_id'):
         user_id = session['user_id']
-        print(f'***********{user_id}***************')
         plant_id= request.form['plant-id']
         current_plant_profile = crud.create_plant_profile(user_id, plant_id)
-        print(f'***********{current_plant_profile}***************')
-        
         plants_added = crud.get_profile_by_user_id(user_id)
-        print(f'***********{plants_added}***************')
-
         return render_template('plant_profile.html', plants_added=plants_added)
-
     else:
         flash(f'Your account was not found, please login or create an account')
         session['name'] = 'no-account-found-please-create-account'
