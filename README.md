@@ -11,18 +11,18 @@ Frontend: JavaScript, Jinja2, Bootstrap, HTML5, CSS
 APIs: GoogleMaps
 
 **Features:**
-<img href="/data/images/pics_for_readme/Pic1.png">
-<img href="/data/images/pics_for_readme/Pic2.png">
+<img src="/data/images/pics_for_readme/Pic1.png">
+<img src="/data/images/pics_for_readme/Pic2.png">
 Account creation & signin
-<img href="/data/images/pics_for_readme/Pic11.png">
-<img href="/data/images/pics_for_readme/Pic3.png">
+<img src="/data/images/pics_for_readme/Pic11.png">
+<img src="/data/images/pics_for_readme/Pic3.png">
 Elect from lighting and window direction options
-<img href="/data/images/pics_for_readme/Pic6.png">
+<img src="/data/images/pics_for_readme/Pic6.png">
 Plants selection
-<img href="/data/images/pics_for_readme/Pic5.png">
-<img href="/data/images/pics_for_readme/Pic8.png">
+<img src="/data/images/pics_for_readme/Pic5.png">
+<img src="/data/images/pics_for_readme/Pic8.png">
 Greenhouse management
-<img href="/data/images/pics_for_readme/Pic9.png">
+<img src="/data/images/pics_for_readme/Pic9.png">
 View nurseries nearby
-<img href="/data/images/pics_for_readme/Pic10.png">
+<img src="/data/images/pics_for_readme/Pic10.png">
 
