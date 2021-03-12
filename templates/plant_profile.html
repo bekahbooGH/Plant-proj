@@ -1,56 +1,34 @@
 {% extends 'base.html' %}
+
 {% block title %}My Greenhouse{% endblock %}
 
 {% block body %}
   <h1>My <b class="greens">Green</b>house</h1>
 {% if plants_added %}
   <ul>
-    
     {% for profile in plants_added %}
-    
-    <!-- <div class="card" style="width: 18rem;"> -->
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row no-gutters">
-          <div class="col-md-5">
+    <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+    <div class="col-md-5">
     <p>
-      <img id="fill" src="{{ profile.plant.pic_src }}">
-      </p>
-      </div>
-
-      <div class="col-md-7">
-        <div class="card-body">
-      <p>
-        {{ profile.plant.plant_name }}
-        </p>
+    <img id="fill" src="{{ profile.plant.pic_src }}">
+    </p>
+    </div>
+    <div class="col-md-7">
+    <div class="card-body">
+    <p>
+    {{ profile.plant.plant_name }}
+    </p>
       <form action="/remove-plant" method="POST">
-    
-    <input id="plant-id" name="plant-id" type="hidden" value="{{ profile.plant_profile_id }}" >     {# make sure this is actually how hidden imputs are formatted #}
-    <button type="submit" class="bggreens">Remove from greenhouse</button>
-    </form>
-  </div>
-</div>
-  </div>
-  </div>
- 
+      <input id="plant-id" name="plant-id" type="hidden" value="{{ profile.plant_profile_id }}" >
+      <button type="submit" class="bggreens">Remove from greenhouse</button>
+      </form>
+    </div>
+    </div>
+    </div>
+    </div>
     {% endfor %}
-  
-    {% endif %}
-    
   </ul>
-
+{% endif %}
 {% endblock %}
-<!-- 
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="..." class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div> -->
+

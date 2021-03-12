@@ -4,12 +4,10 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 {% block title %}User Home{% endblock %}
+
 {% block head %}
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
-<!--Fontawesome CDN-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
 <!--Custom styles-->
 <link rel="stylesheet" type="text/css" href="styles.css">
 <style>
@@ -58,15 +56,13 @@
     input:focus{
     outline: 0 0 0 0  !important;
     box-shadow: 0 0 0 0 !important;
-    
     }
     
     .remember{
     color: white;
     }
     
-    .remember input
-    {
+    .remember input{
     width: 20px;
     height: 20px;
     margin-left: 15px;
@@ -92,19 +88,20 @@
     margin-left: 4px;
     }
 
-    h1 {
+    h1{
     font-family: 'Dancing Script', cursive;
     }
-    h2 {
-        font-family: 'Raleway', sans-serif;
+
+    h2{
+    font-family: 'Raleway', sans-serif;
     }
 
-    #newfont {
-      font-family: 'Raleway', sans-serif;
-      opacity: 1;
+    #newfont{
+    font-family: 'Raleway', sans-serif;
+    opacity: 1;
     }
 
-    .myDiv {
+    .myDiv{
     position: relative; 
     height: 100vh;
     width: 100%;
@@ -113,53 +110,48 @@
     justify-content: center;
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
-}
-
-  .myDiv::before {
-      content: "";
-      background-image: url('https://images.unsplash.com/photo-1593864062738-c54ec4a7a5c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80');
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.5;
-}
-
-    h1, li {
-      position: relative;
-
     }
 
-    a { 
+  .myDiv::before{
+    content: "";
+    background-image: url('https://images.unsplash.com/photo-1593864062738-c54ec4a7a5c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    }
+
+    h1, li{
+      position: relative;
+    }
+
+    a{ 
       color: inherit; 
     }
 
-    #higher {
+    #higher{
       margin-top: 2em !important;
       font-family: 'Dancing Script', cursive;
     }
 
 </style>
 {% endblock %}
-{% block body %}
 
+{% block body %}
 <div class="myDiv">
   <div class="bg">
     <h1 class="quote">Wuba-dub-a-dub-dub, {{ session['current_user'] }}!</h1>
 
-    <!-- <h2>Navigation</h2> -->
     <ul>
       <li><a href="/profile">My greenhouse guests</a></li>
       <li><a href="/plant-form">My future plant babies</a></li>
       <!-- <li><a href="/update-user">Click here to update your human profile</a></li> -->
       <li><a href="/map">Nurseries near me</li>
       <li><a href="/logout">Logout</li>
+    </ul>
   </div>
 </div>
-
-      {# TODO #}
-
-
 {% endblock %}

@@ -17,8 +17,8 @@ model.db.create_all()
 with open('data/plants3.json') as f:
     plant_data = json.loads(f.read())
 
-# Create plants, store them in list so we can use them
-# to create recommendations later
+# Create locations and lighting conditions, store them in list so we can use them
+# to create plants later
 
 crud.create_lighting("Low Light")
 crud.create_lighting("Medium Light")
@@ -29,6 +29,8 @@ crud.create_location("East Facing")
 crud.create_location("South Facing")
 crud.create_location("West Facing")
 
+# Create plants, store them in list so we can use them
+# to create recommendations later
 
 plants_in_db = []
 for plant in plant_data:
@@ -46,7 +48,7 @@ for plant in plant_data:
     plants_in_db.append(db_plant)
 
 
-# Create profiles for each user
+# Create greenhouse profiles for each user
 users_in_db = crud.User.query.all()
 profiles_in_db = []
 for user in users_in_db:

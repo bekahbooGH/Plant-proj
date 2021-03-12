@@ -9,11 +9,12 @@
     <div class="col-md-5">
   <ul class="larger">
     <li><a href="/plants">View all plants</a></li>
+    {% if not session.get('user_id') %}
     <li><a href="/register-user">Create an account</a></li>
     <li><a href="/login">Click here to go to the login page</a></li>
+    {% endif %}
   </ul>
   </div>
-<!-- </div> -->
   
     <div class="col-md-7">
     <h1 id="quote">{{blurb}}</h1>

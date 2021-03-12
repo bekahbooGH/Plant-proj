@@ -3,30 +3,20 @@
 {% block title %}{{ plant.plant_name }} - Details{% endblock %}
 
 {% block body %}
-
 <div class="plantsmarg">
 <h1>{{ plant.plant_name }}</h1>
-
-
 <p>
   {{ plant.plant_description }}
 </p>
-
 <p>
-    Loves {{ plant.lighting.plant_lighting }}
+  Loves {{ plant.lighting.plant_lighting }}
 </p>
-
-
 <p>
-    Prefers {{ plant.location.plant_location }} windows
+  Prefers {{ plant.location.plant_location }} windows
 </p>
-
 <img src="{{ plant.pic_src }}">
 
 <form action="/profile" method="POST">
-
-       
-
   <input id="plant-id" name="plant-id" type="hidden" value="{{ plant.plant_id }}" >     
   <br>
   <button type="submit" class="bggreens">Add to greenhouse</button>

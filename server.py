@@ -96,18 +96,18 @@ def logout():
     return redirect("/")
 
 
-@app.route('/register-user')
-def show_registration():
-    """Show new user form."""
-
-    return render_template("new_user_form.html")
-
-
 @app.route('/user-home')
 def show_user_home():
     """Show user homepage."""
 
     return render_template("user_home.html")
+
+
+@app.route('/register-user')
+def show_registration():
+    """Show new user form."""
+
+    return render_template("new_user_form.html")
 
 
 @app.route('/register-user', methods=['POST'])
@@ -195,31 +195,30 @@ def remove_plant_():
     
     user_id = session['user_id']
     plant_profile_id= request.form['plant-id']
-    # profile = crud.get_profile_by_id(plant_profile_id)
     current_plant_profile = crud.remove_plant(plant_profile_id)
     plants_added = crud.get_profile_by_user_id(user_id)
     return render_template('plant_profile.html', plants_added=plants_added)
 
-    # @app.route("/update-user", methods=["POST"])
-    # def update_user_fname():
-    #     """Allow user to update their own fname from their profile screen."""
-        
-    #     existing_user = crud.get_user_by_email(session['email']) ### USES THE SESSION INFO INSTEAD OF A A HIDDEN INPUT ###
-    #     fname = request.form.get('name-input')
-    
-    #     crud.update_user_fname(existing_user.id, fname)
-    
-    #     session['name'] = fname  ### THEN ALSO OVERWIRE/UPDATE/RESET THE SESSION INFO FOR THE THING THAT YOU'RE ALSO SETTING IN THE DB##
-    #     flash(f"Your name has been successfully updated to: ''{fname}''")
-    
-    #     return redirect('/profile')
 
 @app.route('/map')
 def show_map():
-    
+    """Render map to page."""
+
     return render_template('map.html', map=map)
 
+# @app.route("/update-user", methods=["POST"])
+# def update_user_fname():
+#     """Allow user to update their own fname from their profile screen."""
+    
+#     existing_user = crud.get_user_by_email(session['email']) ### USES THE SESSION INFO INSTEAD OF A A HIDDEN INPUT ###
+#     fname = request.form.get('name-input')
 
+#     crud.update_user_fname(existing_user.id, fname)
+
+#     session['name'] = fname  ### THEN ALSO OVERWIRE/UPDATE/RESET THE SESSION INFO FOR THE THING THAT YOU'RE ALSO SETTING IN THE DB##
+#     flash(f"Your name has been successfully updated to: ''{fname}''")
+
+#     return redirect('/profile')
 
 if __name__ == '__main__':
     connect_to_db(app)

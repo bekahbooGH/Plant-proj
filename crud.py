@@ -132,11 +132,13 @@ def get_profile_by_user_id(user_id):
     profile =  Profile.query.filter(Profile.user_id == user_id).all()
     return profile
 
+
 def get_profile_by_id(plant_profile_id):
     """Return a plant greenhouse by profile id."""
 
     profile =  Profile.query.get(plant_profile_id)
     return profile
+    
     
 def remove_plant(plant_profile_id):
     """Remove a plant from greenhouse by profile id."""
